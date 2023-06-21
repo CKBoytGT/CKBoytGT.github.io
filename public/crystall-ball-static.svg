@@ -1,132 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    viewBox="0 0 943.32 1080"
-    preserveAspectRatio="xMidYMid meet"
-    role="img"
-    style="height: 25em; width: auto; overflow: visible;"
->
-    <title>Glowing green and purple crystal ball with a floating code symbol inside.</title>
-    <defs>
-        <style>
-            .content-color {
-                fill: rgb(33, 19, 53);
-            }
-
-            #stand-edge {
-                fill: url(#stand-edge-grad);
-            }
-
-            #stand-top {
-                fill: url(#stand-top-grad);
-            }
-
-            #shade {
-                fill: url(#shade-grad);
-            }
-
-            #color {
-                fill: url(#color-grad);
-            }
-
-            #ball {
-                fill: red;
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 1240 1240" preserveAspectRatio="xMidYMid meet">
+<style type="text/css">
+	.st0{fill:url(#stand-top_00000055686327953781473870000010883305250272431034_);}
+	.st1{fill:url(#stand-edge_00000169526702080790976160000018282116651632263840_);}
+	.st2{fill:url(#color_00000005260586760315488230000007079342015366036636_);}
+	.st3{fill:url(#shade_00000075145509937654004850000011546035214644081302_);}
+	.st4{fill:#211335;}
+	#ball {
                 filter:
                     drop-shadow(0 0 2.5em rgb(156, 231, 224))
-                    drop-shadow(0 0 3em rgb(126, 87, 197))
-                    drop-shadow(0 0 3em rgb(126, 87, 197));
+                    drop-shadow(0 0 2.5em rgb(126, 87, 197))
+                    drop-shadow(0 0 2.5em rgb(126, 87, 197));
             }
-        </style>
-        <linearGradient
-          id="stand-edge-grad"
-          x1="162.26"
-          y1="991.8"
-          x2="781.06"
-          y2="991.8"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stop-color="rgb(156, 231, 224)" />
-          <stop offset="1" stop-color="rgb(33, 19, 53)" />
-        </linearGradient>
-        <linearGradient
-          id="stand-top-grad"
-          x1="200.39"
-          y1="903.6"
-          x2="742.93"
-          y2="903.6"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stop-color="rgb(156, 231, 224)" />
-          <stop offset="1" stop-color="rgb(33, 19, 53)" />
-        </linearGradient>
-        <radialGradient
-          id="shade-grad"
-          cx="471.66"
-          cy="471.66"
-          fx="340.49"
-          fy="244.85"
-          r="471.66"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset=".76" stop-color="rgb(126, 87, 197)" stop-opacity="0" />
-          <stop offset="1" stop-color="rgb(126, 87, 197)" />
-        </radialGradient>
-        <linearGradient
-          id="color-grad"
-          x1="471.66"
-          y1="943.32"
-          x2="471.66"
-          y2="0"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stop-color="rgb(126, 87, 197)" />
-          <stop offset="1" stop-color="rgb(156, 231, 224)" />
-        </linearGradient>
-      </defs>
-      <g id="stand">
-        <g id="top">
-          <ellipse
-            id="stand-top"
-            cx="471.66"
-            cy="903.6"
-            rx="271.27"
-            ry="62.52"
-          />
-        </g>
-        <g id="edge">
-            <path
-                id="stand-edge"
-                d="m742.93,900.56c0,34.53-121.45,63.96-271.27,63.96s-271.27-29.43-271.27-63.96l-38.13,108.14c0,39.38,138.52,71.3,309.4,71.3s309.4-31.92,309.4-71.3l-38.13-108.14Z"
-            />
-        </g>
-      </g>
-      <g id="ball">
-        <circle
-            id="color"
-            cx="471.66"
-            cy="471.66"
-            r="470"
-        />
-        <circle
-            id="shade"
-            cx="471.66"
-            cy="471.66"
-            r="471.66"
-        />
-        <g id="content">
-          <path
-            class="content-color"
-            d="m361.77,637.9c0-3.06.68-5.94,2.04-8.67l131.57-320.76c2.72-6.8,7.65-10.2,14.79-10.2h63.23c5.43,0,8.16,2.55,8.16,7.65,0,2.38-.51,5.1-1.53,8.16l-131.57,320.76c-2.72,6.81-7.82,10.2-15.3,10.2h-62.72c-5.78,0-8.67-2.37-8.67-7.14Z"
-          />
-        <path
-            class="content-color"
-            d="m111.54,500.22c-3.4-1.35-5.7-3.06-6.88-5.1-1.2-2.04-1.79-4.92-1.79-8.67v-30.6c0-3.74.59-6.63,1.79-8.67,1.19-2.04,3.48-3.74,6.88-5.1l224.89-100.97c2.04-.68,3.57-1.02,4.59-1.02,4.41,0,6.63,2.38,6.63,7.14v56.09c0,4.08-.6,6.88-1.78,8.41-1.2,1.53-3.49,2.98-6.88,4.33l-134.12,54.56,134.12,54.56c3.39,1.36,5.69,2.8,6.88,4.33,1.19,1.53,1.78,4.33,1.78,8.41v57.11c0,4.76-2.21,7.14-6.63,7.14-2.04,0-3.57-.34-4.59-1.02l-224.89-100.97Z"
-        />
-        <path
-            class="content-color"
-            d="m601.8,602.21c-4.08,0-6.12-2.37-6.12-7.14v-52.52c0-3.74.59-6.45,1.78-8.16,1.19-1.7,3.48-3.23,6.88-4.59l137.18-59.15-137.18-59.15c-3.4-1.35-5.7-2.88-6.88-4.59-1.19-1.7-1.78-4.41-1.78-8.16v-51.51c0-4.76,2.04-7.14,6.12-7.14,1.02,0,2.55.34,4.59,1.02l225.4,100.97c3.06,1.36,5.27,3.06,6.63,5.1,1.35,2.04,2.04,4.93,2.04,8.67v30.6c0,3.74-.69,6.63-2.04,8.67-1.36,2.04-3.57,3.75-6.63,5.1l-225.4,100.97c-2.04.68-3.57,1.02-4.59,1.02Z"
-        />
-        </g>
-    </g>
+</style>
+<g id="stand">
+	<g id="top">
+		
+			<linearGradient id="stand-top_00000182489466517992492720000007794189284561162156_" gradientUnits="userSpaceOnUse" x1="348.73" y1="334.4" x2="891.27" y2="334.4" gradientTransform="matrix(1 0 0 -1 0 1398)">
+			<stop  offset="0" style="stop-color:#9CE7E0"/>
+			<stop  offset="1" style="stop-color:#211335"/>
+		</linearGradient>
+		
+			<ellipse id="stand-top" style="fill:url(#stand-top_00000182489466517992492720000007794189284561162156_);" cx="620" cy="1063.6" rx="271.3" ry="62.5"/>
+	</g>
+	<g id="edge">
+		
+			<linearGradient id="stand-edge_00000104689417857438419550000014869483876826429095_" gradientUnits="userSpaceOnUse" x1="310.6" y1="247.72" x2="929.4" y2="247.72" gradientTransform="matrix(1 0 0 -1 0 1398)">
+			<stop  offset="0" style="stop-color:#9CE7E0"/>
+			<stop  offset="1" style="stop-color:#211335"/>
+		</linearGradient>
+		<path id="stand-edge" style="fill:url(#stand-edge_00000104689417857438419550000014869483876826429095_);" d="M891.3,1060.6
+			c0,34.5-121.5,64-271.3,64s-271.3-29.4-271.3-64l-38.1,108.1c0,39.4,138.5,71.3,309.4,71.3s309.4-31.9,309.4-71.3L891.3,1060.6z"
+			/>
+	</g>
+</g>
+<g id="ball">
+	
+		<linearGradient id="color_00000036935489068308917570000014001646261693772682_" gradientUnits="userSpaceOnUse" x1="620" y1="294.68" x2="620" y2="1238" gradientTransform="matrix(1 0 0 -1 0 1398)">
+		<stop  offset="0" style="stop-color:#7E57C5"/>
+		<stop  offset="1" style="stop-color:#9CE7E0"/>
+	</linearGradient>
+	<circle id="color" style="fill:url(#color_00000036935489068308917570000014001646261693772682_);" cx="620" cy="631.7" r="470"/>
+	
+		<radialGradient id="shade_00000133509109914943273820000018238021431908968339_" cx="620" cy="766.34" r="471.66" fx="488.83" fy="539.53" gradientTransform="matrix(1 0 0 -1 0 1398)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.76" style="stop-color:#7E57C5;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#7E57C5"/>
+	</radialGradient>
+	
+		<circle id="shade" style="fill:url(#shade_00000133509109914943273820000018238021431908968339_);" cx="620" cy="631.7" r="471.7"/>
+	<g id="content">
+		<path class="st4" d="M510.1,797.9c0-3.1,0.7-5.9,2-8.7l131.6-320.8c2.7-6.8,7.7-10.2,14.8-10.2h63.2c5.4,0,8.2,2.5,8.2,7.6
+			c0,2.4-0.5,5.1-1.5,8.2L596.8,794.8c-2.7,6.8-7.8,10.2-15.3,10.2h-62.7C513,805,510.1,802.7,510.1,797.9L510.1,797.9z"/>
+		<path class="st4" d="M259.9,660.2c-3.4-1.3-5.7-3.1-6.9-5.1c-1.2-2-1.8-4.9-1.8-8.7v-30.6c0-3.7,0.6-6.6,1.8-8.7
+			c1.2-2,3.5-3.7,6.9-5.1l224.9-101c2-0.7,3.6-1,4.6-1c4.4,0,6.6,2.4,6.6,7.1v56.1c0,4.1-0.6,6.9-1.8,8.4c-1.2,1.5-3.5,3-6.9,4.3
+			l-134.1,54.6l134.1,54.6c3.4,1.4,5.7,2.8,6.9,4.3s1.8,4.3,1.8,8.4V755c0,4.8-2.2,7.1-6.6,7.1c-2,0-3.6-0.3-4.6-1L259.9,660.2
+			L259.9,660.2z"/>
+		<path class="st4" d="M750.1,762.2c-4.1,0-6.1-2.4-6.1-7.1v-52.5c0-3.7,0.6-6.5,1.8-8.2c1.2-1.7,3.5-3.2,6.9-4.6l137.2-59.1
+			l-137.2-59.2c-3.4-1.3-5.7-2.9-6.9-4.6c-1.2-1.7-1.8-4.4-1.8-8.2v-51.5c0-4.8,2-7.1,6.1-7.1c1,0,2.5,0.3,4.6,1l225.4,101
+			c3.1,1.4,5.3,3.1,6.6,5.1c1.3,2,2,4.9,2,8.7v30.6c0,3.7-0.7,6.6-2,8.7c-1.4,2-3.6,3.8-6.6,5.1l-225.4,101
+			C752.7,761.9,751.2,762.2,750.1,762.2L750.1,762.2z"/>
+	</g>
+</g>
 </svg>
