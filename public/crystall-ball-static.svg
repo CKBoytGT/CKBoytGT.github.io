@@ -7,12 +7,47 @@
 	.st2{fill:url(#color_00000005260586760315488230000007079342015366036636_);}
 	.st3{fill:url(#shade_00000075145509937654004850000011546035214644081302_);}
 	.st4{fill:#211335;}
+
 	#ball {
-                filter:
-                    drop-shadow(0 0 2.5em rgb(156, 231, 224))
-                    drop-shadow(0 0 2.5em rgb(126, 87, 197))
-                    drop-shadow(0 0 2.5em rgb(126, 87, 197));
-            }
+    	animation: 4s linear infinite glow;
+	}
+
+	@keyframes glow {
+		50% {
+			filter:
+				drop-shadow(0 0 2.5em rgb(156, 231, 224))
+				drop-shadow(0 0 2.5em rgb(126, 87, 197))
+				drop-shadow(0 0 2.5em rgb(126, 87, 197));
+		}
+		0%, 100% {
+			filter:
+				drop-shadow(0 0 2.5em rgba(156, 231, 224), 0.5)
+				drop-shadow(0 0 3em rgba(126, 87, 197), 0.25)
+				drop-shadow(0 0 3em rgba(126, 87, 197), 0.25);
+		}
+	}
+
+	#content {
+    	animation: 2s linear infinite float, 4s linear infinite fade;
+	}
+
+	@keyframes float {
+		50% {
+			transform: translate(0, 1em);
+		}
+		0%, 100% {
+			transform: translate(0, -1em);
+		}
+	}
+
+	@keyframes fade {
+		50% {
+			opacity: 75%;
+		}
+		0%, 100% {
+			opacity: 50%;
+		}
+	}
 </style>
 <g id="stand">
 	<g id="top">
