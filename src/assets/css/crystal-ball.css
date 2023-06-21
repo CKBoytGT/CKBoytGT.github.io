@@ -1,0 +1,41 @@
+#ball {
+    animation: 4s linear infinite glow;
+}
+
+@keyframes glow {
+    50% {
+        filter:
+            drop-shadow(0 0 2.5em rgb(var(--accent)))
+            drop-shadow(0 0 3em rgb(var(--light)))
+            drop-shadow(0 0 3em rgb(var(--light)));
+    }
+    0%, 100% {
+        filter:
+            drop-shadow(0 0 2.5em rgba(var(--accent), 0.5))
+            drop-shadow(0 0 3em rgba(var(--light), 0.25))
+            drop-shadow(0 0 3em rgba(var(--light), 0.25));
+    }
+}
+
+#content {
+    animation:
+        2s linear infinite float, 4s linear infinite fade;
+}
+
+@keyframes float {
+    50% {
+        transform: translate(0, 1em);
+    }
+    0%, 100% {
+        transform: translate(0, -1em);
+    }
+}
+
+@keyframes fade {
+    50% {
+        opacity: 75%;
+    }
+    0%, 100% {
+        opacity: 50%;
+    }
+}
