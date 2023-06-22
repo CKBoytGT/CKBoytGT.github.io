@@ -72,15 +72,15 @@
 </g>
 <g id="ball">
 	
-		<linearGradient id="color_00000036935489068308917570000014001646261693772682_" gradientUnits="userSpaceOnUse" x1="620" y1="294.68" x2="620" y2="1238" gradientTransform="matrix(1 0 0 -1 0 1398)">
+	<linearGradient id="color_00000036935489068308917570000014001646261693772682_" gradientUnits="userSpaceOnUse" x1="620" y1="294.68" x2="620" y2="1238" gradientTransform="matrix(1 0 0 -1 0 1398)">
 		<stop  offset="0" style="stop-color:#7E57C5"/>
 		<stop  offset="1" style="stop-color:#9CE7E0"/>
 	</linearGradient>
 	<circle id="color" style="fill:url(#color_00000036935489068308917570000014001646261693772682_);" cx="620" cy="631.7" r="470"/>
 	
-		<radialGradient id="shade_00000133509109914943273820000018238021431908968339_" cx="620" cy="766.34" r="471.66" fx="488.83" fy="539.53" gradientTransform="matrix(1 0 0 -1 0 1398)" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.76" style="stop-color:#7E57C5;stop-opacity:0"/>
-		<stop  offset="1" style="stop-color:#7E57C5"/>
+	<radialGradient id="shade_00000133509109914943273820000018238021431908968339_" cx="600" cy="802.34" r="471.66" fx="600" fy="797.5" gradientTransform="matrix(1 0 0 -1 0 1398)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.7796" style="stop-color:#7E57C5;stop-opacity:0"/>
+		<stop  offset="0.9265" style="stop-color:#7E57C5"/>
 	</radialGradient>
 	
 		<circle id="shade" style="fill:url(#shade_00000133509109914943273820000018238021431908968339_);" cx="620" cy="631.7" r="471.7"/>
