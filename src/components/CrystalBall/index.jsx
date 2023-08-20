@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 // import { useState } from "react";
-import "../assets/css/crystal-ball.css"
+import "./index.css"
 
 const CrystalBall = ( { style } ) => {
   // const [isHover, setIsHover] = useState(false);
