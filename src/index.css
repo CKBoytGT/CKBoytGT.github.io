@@ -24,11 +24,8 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
+  /* margin: 0; */
   font-size: 2rem;
 }
 
@@ -47,21 +44,28 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+.hidden, .tablet-hidden-flex {
+  display: none;
+}
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: var(--dark);
-    background-color: var(--light);
+.desktop-hidden-in {
+  display: inline;
+}
+
+.desktop-hidden-flex {
+  display: flex;
+}
+
+#about, #work, #contact {
+  scroll-margin-top: 6.8rem;
+}
+
+@media screen and (min-width: 913px) {
+  .tablet-hidden-flex {
+    display: flex;
   }
-  a:hover {
-    color: #747bff;
+
+  .desktop-hidden-in, .desktop-hidden-flex {
+    display: none;
   }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+}
