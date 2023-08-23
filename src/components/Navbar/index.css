@@ -1,9 +1,8 @@
 header {
-  /* margin: 0 2rem 2rem 2rem; */
-  border-bottom: 1px solid rgb(var(--light));
-  padding: 1rem 0 1rem 0;
+  width: 100%;
   position: sticky;
   background-color: rgb(var(--dark));
+  border-spacing: 5px;
 }
 
 .sticky {
@@ -11,8 +10,14 @@ header {
   top: 0;
 }
 
+#header-border {
+  margin: 0 1rem;
+  padding: 1.2rem 0 1.2rem 0;
+  border-bottom: 1px solid rgb(var(--light));
+}
+
 #header-container {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 #header-top-row {

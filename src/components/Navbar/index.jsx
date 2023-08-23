@@ -13,35 +13,37 @@ const Navbar = () => {
 
   return (
     <header className="sticky">
-      <div id="header-container">
-        <div id="header-top-row">
-          <div id="site-logo">
-            <a href="/" title="Homepage of CKBoyt.com">
-              <img src={logo} alt="C. K. Boyt logo"></img>
-            </a>
+      <div id="header-border">
+        <div id="header-container">
+          <div id="header-top-row">
+            <div id="site-logo">
+              <a href="/" title="Homepage of CKBoyt.com">
+                <img src={logo} alt="C. K. Boyt logo"></img>
+              </a>
+            </div>
+            <div
+              id="hamburger"
+              className="desktop-hidden-in"
+              onClick={toggleHamburger}
+            >
+              {hamburgerOpen ? (
+                <HiOutlineXMark className="hamburger-icon" />
+              ) : (
+                <HiOutlineBars3 className="hamburger-icon" />
+              )}
+            </div>
+            <nav className="tablet-hidden-flex">
+              <NavLinks />
+            </nav>
           </div>
-          <div
-            id="hamburger"
-            className="desktop-hidden-in"
-            onClick={toggleHamburger}
-          >
-            {hamburgerOpen ? (
-              <HiOutlineXMark className="hamburger-icon" />
-            ) : (
-              <HiOutlineBars3 className="hamburger-icon" />
-            )}
-          </div>
-          <nav className="tablet-hidden-flex">
-            <NavLinks />
-          </nav>
+          {hamburgerOpen && (
+            <nav className="desktop-hidden-flex">
+              <NavLinks
+                onPress={toggleHamburger}
+              />
+            </nav>
+          )}
         </div>
-        {hamburgerOpen && (
-          <nav className="desktop-hidden-flex">
-            <NavLinks
-              onPress={toggleHamburger}
-            />
-          </nav>
-        )}
       </div>
     </header>
   );
