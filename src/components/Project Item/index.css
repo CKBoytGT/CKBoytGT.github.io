@@ -1,0 +1,56 @@
+.proj {
+  border-radius: 0.5em;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.proj img {
+  display: block;
+}
+
+.proj-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.proj-overlay:hover {
+  opacity: 1;
+}
+
+.proj-info {
+  background: rgb(var(--light));
+  width: 100%;
+  line-height: 1.25;
+  padding: 0.5rem 0;
+}
+
+.proj-name a {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.proj-name a, svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.proj-name svg {
+  top: -0.125em;
+  position: relative;
+}
+
+.proj-langs {
+  font-size: 1.6rem;
+}
