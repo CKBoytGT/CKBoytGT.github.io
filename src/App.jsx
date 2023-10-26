@@ -4,7 +4,6 @@ import CrystalBall from "./components/CrystalBall";
 import projects from "./data/projects.json";
 import ProjectItem from "./components/ProjectItem";
 import ContactForm from "./components/ContactForm";
-// import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   return (
@@ -70,45 +69,6 @@ function App() {
         </section>
       </main>
       <footer>Footer</footer>
-      {/* <div>
-        <CrystalBall
-          className="logo"
-          style={{
-            height: "40rem",
-            width: "auto",
-            overflow: "visible",
-            paddingTop: "5rem",
-          }}
-        />
-      </div>
-      <h1>I see a bright future ahead...</h1>
-      <div>
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Until then: <FaGithub style={{ fill: "rgb(var(--accent)" }} />{" "}
-          <a
-            href="https://github.com/CKBoytGT"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>{" "}
-          | <FaLinkedin style={{ fill: "rgb(var(--accent)" }} />{" "}
-          <a
-            href="https://www.linkedin.com/in/ckboyt/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
-      </div> */}
     </>
   );
 }
