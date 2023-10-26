@@ -14,7 +14,7 @@ main {
 }
 
 h1 {
-  font-family: Eczar;
+  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
   font-size: 6.4rem;
   line-height: 1.1;
 }
@@ -23,7 +23,7 @@ h2 {
   width: 100%;
   overflow: hidden;
   padding: 0;
-  font-family: Eczar;
+  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
   text-transform: lowercase;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
