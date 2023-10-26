@@ -1,50 +1,52 @@
 [
   {
     "id": 1,
-    "name": "Placeholder 1",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "projeCritter",
+    "img": "./images/thumbnail-project-1.jpg",
+    "live": "https://projecritter.herokuapp.com/",
+    "github": "https://github.com/CKBoytGT/projeCritter",
+    "langs": ["React", "GraphQL", "CSS Animation"]
   },
   {
     "id": 2,
-    "name": "Placeholder 2",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "waterUdoin",
+    "img": "./images/thumbnail-project-2.jpg",
+    "live": "https://github.com/CKBoytGT/waterUdoin",
+    "_comment": "!!!swap above URL once deployed!!!",
+    "github": "https://github.com/CKBoytGT/waterUdoin",
+    "langs": ["MySQL", "RESTful API", "Tailwind CSS"]
   },
   {
     "id": 3,
-    "name": "Placeholder 3",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "ArtiScapes",
+    "img": "./images/thumbnail-project-3.jpg",
+    "live": "https://ckboytgt.github.io/ArtiScapes/",
+    "github": "https://github.com/CKBoytGT/ArtiScapes",
+    "langs": ["HTML", "JavaScript", "Tailwind CSS"]
   },
   {
     "id": 4,
-    "name": "Placeholder 4",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "CNN Editorial",
+    "img": "./images/thumbnail-project-4.jpg",
+    "live": "https://github.com/CKBoytGT/most-unequal",
+    "_comment": "!!!swap above URL once deployed!!!",
+    "github": "https://github.com/CKBoytGT/most-unequal",
+    "langs": ["HTML", "CSS", "Adobe After Effects"]
   },
   {
     "id": 5,
-    "name": "Placeholder 5",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "WRAS.org",
+    "img": "./images/thumbnail-project-5.jpg",
+    "live": "https://wras.org/",
+    "github": "none",
+    "langs": ["WordPress", "CSS", "Adobe Suite"]
   },
   {
     "id": 6,
-    "name": "Placeholder 6",
-    "img": "./images/screenshot-PLACEHOLDER.jpg",
-    "live": "/",
-    "github": "/",
-    "langs": ["example", "example", "example"]
+    "name": "CompassNIL Landing",
+    "img": "./images/thumbnail-project-6.jpg",
+    "live": "https://compassnil.com/",
+    "github": "none",
+    "langs": ["Adobe Illustrator", "Adobe Photoshop"]
   }
 ]
