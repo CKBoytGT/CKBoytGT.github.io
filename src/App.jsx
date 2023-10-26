@@ -25,7 +25,7 @@ function App() {
             <p>
               I&apos;m <span className="highlight">Christina K. Boyt</span>, a
               front-end web developer with extensive graphic design and digital
-              media experience. In addition to my BFA in graphic design, I have
+              media experience. In addition to my BFA in Graphic Design, I have
               received a certificate in Full Stack Web Development from Georgia
               Tech. My combination of formal education and self-teaching has
               given me the ability to both design and code websites and apps
