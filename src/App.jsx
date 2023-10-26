@@ -11,14 +11,7 @@ function App() {
       <Navbar />
       <main>
         <section id="about">
-          <CrystalBall
-            style={{
-              height: "32rem",
-              width: "auto",
-              overflow: "visible",
-              padding: "2.5rem 5rem 0 5rem",
-            }}
-          />
+          <CrystalBall />
           <div>
             <h2>About</h2>
             <p>
