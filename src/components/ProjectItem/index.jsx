@@ -17,9 +17,13 @@ const ProjectItem = ({ img, live, gitHub, name, langs }) => {
             >
               {name}
             </a>{" "}
-            <a href={gitHub} target="_blank" rel="noreferrer">
-              <FaGithub />
-            </a>
+            {
+              gitHub !== "none" && <a href={gitHub} target="_blank" rel="noreferrer">
+              <FaGithub /></a>
+            }
+            {/* <a href={gitHub} target="_blank" rel="noreferrer">
+               <FaGithub />
+            </a> */}
           </div>
           <div className="proj-langs">{langString}</div>
         </div>
