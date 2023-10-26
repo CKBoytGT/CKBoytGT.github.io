@@ -81,6 +81,13 @@ nav a:focus-visible {
   outline: 2px rgb(var(--accent)) solid;
 }
 
+#about,
+#work,
+#contact {
+  scroll-margin-top: 6.8rem;
+  padding-top: 2rem;
+}
+
 #about {
   display: flex;
   flex-direction: column;
@@ -93,6 +100,11 @@ nav a:focus-visible {
   flex-direction: column;
   align-items: center;
   grid-gap: 2rem;
+  padding-top: 2rem;
+}
+
+#contact {
+  padding-bottom: 0;
 }
 
 .highlight {
@@ -110,12 +122,6 @@ nav a:focus-visible {
 
 .desktop-hidden-flex {
   display: flex;
-}
-
-#about,
-#work,
-#contact {
-  scroll-margin-top: 6.8rem;
 }
 
 @media screen and (min-width: 913px) {
