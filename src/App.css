@@ -9,8 +9,8 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin: 2rem;
+  gap: 4rem;
+  margin: 4rem 2rem;
 }
 
 h1 {
@@ -23,6 +23,7 @@ h2 {
   width: 100%;
   overflow: hidden;
   padding: 0;
+  padding-bottom: 2rem;
   font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
   text-transform: lowercase;
   font-size: 3.2rem;
@@ -85,7 +86,7 @@ nav a:focus-visible {
 #work,
 #contact {
   scroll-margin-top: 6.8rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 #about {
@@ -100,11 +101,6 @@ nav a:focus-visible {
   flex-direction: column;
   align-items: center;
   grid-gap: 2rem;
-  padding-top: 2rem;
-}
-
-#contact {
-  padding-bottom: 0;
 }
 
 .highlight {
