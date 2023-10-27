@@ -60,8 +60,12 @@ a:hover {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: left;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 :focus:not(:focus-visible) {
