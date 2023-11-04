@@ -78,14 +78,6 @@ p:last-child {
   border-radius: 0.25rem;
 }
 
-input:focus-visible,
-input:active,
-textarea:focus-visible,
-textarea:active,
-nav a:focus-visible {
-  outline: 2px rgb(var(--accent)) solid;
-}
-
 #about,
 #work,
 #contact {

@@ -37,14 +37,20 @@
   text-decoration: none;
 }
 
-.proj-name a, svg {
+.proj-name a,
+.proj-name svg {
   display: inline-block;
   vertical-align: middle;
+}
+
+.proj-name a {
+  padding: 0 0.25rem;
 }
 
 .proj-name svg {
   top: -0.125em;
   position: relative;
+  margin: 0 0.25rem;
 }
 
 .proj-langs {
@@ -61,4 +67,8 @@
     transition: opacity 0.3s;
     opacity: 1;
   }
+}
+
+.proj-name a:focus-visible {
+  outline-offset: 0 ;
 }
