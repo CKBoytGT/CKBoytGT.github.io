@@ -12,6 +12,13 @@ form {
     gap: 1rem;
 }
 
+input:focus-visible,
+input:active,
+textarea:focus-visible,
+textarea:active {
+  outline: 2px rgb(var(--accent)) solid;
+}
+
 label {
     width: 100%;
     display: flex;
@@ -19,8 +26,9 @@ label {
 
 input, textarea {
     border-radius: 0.5rem;
-    background: #fff;
-    color: rgb(var(--dark));
+    border: 1px solid rgb(var(--light));
+    background: transparent;
+    color: #fff;
     padding: 0.5rem 1rem;
 }
 
@@ -42,8 +50,22 @@ input {
 
 textarea {
     display: block;
+    margin-top: 0.5rem;
 }
 
 form button {
     align-self: flex-end;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg,rgb(var(--light)) 0,rgb(var(--accent)) 100%);
+    color: rgb(var(--dark));
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+form button:hover,
+form button:focus-visible {
+    background: rgb(var(--light));
+    color: #fff;
 }
