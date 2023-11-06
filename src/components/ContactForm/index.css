@@ -64,6 +64,37 @@ form button {
     letter-spacing: 0.25rem;
 }
 
+#send-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#send-bar p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: rgb(var(--accent));
+}
+
+#dots {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    width: 0rem;
+}
+
+@keyframes ellipsis {
+    to { width: 1.2rem; }
+}
+
+@-webkit-keyframes ellipsis {
+  to { width: 1.2rem; }
+}
+
 form button:hover,
 form button:focus-visible {
     background: rgb(var(--light));
