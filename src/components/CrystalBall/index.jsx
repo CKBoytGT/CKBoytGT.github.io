@@ -2,7 +2,7 @@
 // import { useState } from "react";
 import "./index.css"
 
-const CrystalBall = ( { style } ) => {
+const CrystalBall = () => {
   // const [isHover, setIsHover] = useState(false);
 
   // const handleMouseEnter = () => {
@@ -41,7 +41,12 @@ const CrystalBall = ( { style } ) => {
       viewBox="0 0 943.32 1080"
       preserveAspectRatio="xMidYMid meet"
       role="img"
-      style={style}
+      style={{
+        height: "32rem",
+        width: "auto",
+        overflow: "visible",
+        padding: "2.5rem 5rem 0 5rem",
+      }}
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >

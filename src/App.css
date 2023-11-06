@@ -1,6 +1,149 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3.2rem;
+  /* padding: 0 1rem; */
   text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 4rem 2rem;
+}
+
+h1 {
+  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  font-size: 6.4rem;
+  line-height: 1.1;
+}
+
+h2 {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 2rem;
+  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  text-transform: lowercase;
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+
+h2::before,
+h2::after {
+  border-top: 1px solid #9ce7e0;
+  border-top: 1px solid rgb(var(--accent));
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+h2::before {
+  margin-left: -100%;
+  margin-right: 1rem;
+}
+
+h2::after {
+  margin-left: 1rem;
+  margin-right: -100%;
+}
+
+a {
+  color: rgb(var(--accent));
+  text-decoration: underline;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px #fff solid;
+  outline-offset: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+#about,
+#work,
+#contact {
+  scroll-margin-top: 6.8rem;
+  /* padding-top: 2rem; */
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#proj-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.highlight {
+  color: rgb(var(--accent));
+}
+
+.hidden,
+.tablet-hidden-flex {
+  display: none;
+}
+
+.desktop-hidden-in {
+  display: inline;
+}
+
+.desktop-hidden-flex {
+  display: flex;
+}
+
+@media screen and (min-width: 913px) {
+  h2 {
+    text-align: left;
+  }
+
+  h2::before {
+    display: none;
+  }
+
+  #about {
+    flex-direction: row;
+  }
+
+  .tablet-hidden-flex {
+    display: flex;
+  }
+
+  .desktop-hidden-in,
+  .desktop-hidden-flex {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 440px) {
+
+  #proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 }
