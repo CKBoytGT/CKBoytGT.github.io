@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(var(--accent));
+    margin: 0 2rem;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul a:hover,
+footer ul a:focus-visible {
+    color: rgb(var(--accent));
+    text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    footer ul {
+        margin-top: 0;
+        font-size: 2.4rem;
+    }
+}

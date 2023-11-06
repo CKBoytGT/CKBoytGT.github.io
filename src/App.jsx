@@ -4,6 +4,7 @@ import CrystalBall from "./components/CrystalBall";
 import projects from "./data/projects.json";
 import ProjectItem from "./components/ProjectItem";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -61,7 +62,7 @@ function App() {
           <ContactForm />
         </section>
       </main>
-      <footer>Footer</footer>
+      <Footer />
     </>
   );
 }
