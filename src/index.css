@@ -57,6 +57,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+button {
+  font-size: 100%;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 html {
   height: 100%;
 }
