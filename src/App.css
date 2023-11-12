@@ -14,7 +14,7 @@ main {
 }
 
 h1 {
-  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
   font-size: 6.4rem;
   line-height: 1.1;
 }
@@ -24,7 +24,7 @@ h2 {
   overflow: hidden;
   padding: 0;
   padding-bottom: 2rem;
-  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
   text-transform: lowercase;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
@@ -99,6 +99,16 @@ p:last-child {
   grid-gap: 2rem;
 }
 
+#contact-lockup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 .highlight {
   color: rgb(var(--accent));
 }
@@ -139,11 +149,18 @@ p:last-child {
   }
 }
 
-@media screen and (min-width: 440px) {
-
-  #proj-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+@media screen and (min-width: 913px) {
+  #contact-lockup {
+    flex-direction: row;
+    gap: 2.5rem;
+    max-width: none;
+    margin: 0;
+  }
 }
 
+@media screen and (min-width: 440px) {
+  #proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
