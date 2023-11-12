@@ -3,6 +3,7 @@
 import "./index.css"
 
 const CrystalBall = () => {
+  // // use this if you want to set up an effect on hover
   // const [isHover, setIsHover] = useState(false);
 
   // const handleMouseEnter = () => {
@@ -14,25 +15,8 @@ const CrystalBall = () => {
   // };
 
   const styles = {
-    main: {
-      height: "25em",
-      width: "auto",
-      overflow: "visible",
-    },
     contentColor: {
       fill: "rgb(var(--dark))",
-    },
-    standEdge: {
-      fill: "url(#stand-edge-grad)",
-    },
-    standTop: {
-      fill: "url(#stand-top-grad)",
-    },
-    shade: {
-      fill: "url(#shade-grad)",
-    },
-    color: {
-      fill: "url(#color-grad)",
     }
   };
 
@@ -104,7 +88,7 @@ const CrystalBall = () => {
       <g id="stand">
         <g id="top">
           <ellipse
-            style={styles.standTop}
+            style={{ fill: "url(#stand-top-grad)" }}
             cx="471.66"
             cy="903.6"
             rx="271.27"
@@ -113,22 +97,22 @@ const CrystalBall = () => {
         </g>
         <g id="edge">
           <path
-            style={styles.standEdge}
+            style={{ fill: "url(#stand-edge-grad)" }}
             d="m742.93,900.56c0,34.53-121.45,63.96-271.27,63.96s-271.27-29.43-271.27-63.96l-38.13,108.14c0,39.38,138.52,71.3,309.4,71.3s309.4-31.92,309.4-71.3l-38.13-108.14Z"
           />
         </g>
       </g>
-      <g id="ball" style={styles.ball}>
+      <g id="ball">
         <circle
           id="color"
-          style={styles.color}
+          style={{ fill: "url(#color-grad)" }}
           cx="471.66"
           cy="471.66"
           r="470"
         />
         <circle
           id="shade"
-          style={styles.shade}
+          style={{ fill: "url(#shade-grad)" }}
           cx="471.66"
           cy="471.66"
           r="471.66"
