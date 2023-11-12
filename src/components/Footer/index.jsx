@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa6";
 
 const Footer = () => {
-
   return (
     <footer>
       <p>Copyright &#169; 2023 Christina K. Boyt. All rights reserved.</p>
@@ -16,6 +15,7 @@ const Footer = () => {
         <li>
           <a
             href="https://github.com/CKBoytGT"
+            aria-label="GitHub"
             target="_blank"
             rel="noreferrer"
           >
@@ -25,6 +25,7 @@ const Footer = () => {
         <li>
           <a
             href="https://www.linkedin.com/in/ckboyt/"
+            aria-label="LinkedIn"
             target="_blank"
             rel="noreferrer"
           >
@@ -32,13 +33,19 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/CKBoyt" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/CKBoyt"
+            aria-label="X"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaXTwitter />
           </a>
         </li>
         <li>
           <a
             href="https://mastodon.social/@ckboyt"
+            aria-label="Mastodon"
             target="_blank"
             rel="noreferrer"
           >
@@ -48,6 +55,7 @@ const Footer = () => {
         <li>
           <a
             href="https://dribbble.com/CKBoyt"
+            aria-label="Dribbble"
             target="_blank"
             rel="noreferrer"
           >
