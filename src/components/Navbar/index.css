@@ -31,7 +31,7 @@ header {
 
 #site-logo img {
   display: block;
-  max-height: 48px;
+  max-height: 44px;
 }
 
 nav {
@@ -42,12 +42,12 @@ nav {
 }
 
 #hamburger {
-  max-height: 48px;
+  max-height: 44px;
 }
 
 .hamburger-icon {
-  min-height: 48px;
-  min-width: 48px;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 @media screen and (min-width: 913px) {
