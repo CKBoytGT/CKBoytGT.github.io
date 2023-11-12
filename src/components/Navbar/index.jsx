@@ -17,21 +17,22 @@ const Navbar = () => {
         <div id="header-container">
           <div id="header-top-row">
             <div id="site-logo">
-              <a href="/" title="Homepage of CKBoyt.com">
+              <a href="/" title="homepage of ckboyt.com">
                 <img src={logo} alt="C. K. Boyt logo"></img>
               </a>
             </div>
-            <div
+            <button
               id="hamburger"
               className="desktop-hidden-in"
               onClick={toggleHamburger}
+              aria-label={hamburgerOpen ? "close the menu" : "open the menu"}
             >
               {hamburgerOpen ? (
                 <HiOutlineXMark className="hamburger-icon" />
               ) : (
                 <HiOutlineBars3 className="hamburger-icon" />
               )}
-            </div>
+            </button>
             <nav className="tablet-hidden-flex">
               <NavLinks />
             </nav>
