@@ -21,9 +21,13 @@ footer ul {
     font-size: 4rem;
 }
 
-footer ul a {
+footer ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+footer ul li a svg {
+    display: block;
 }
 
 footer ul a:hover,
