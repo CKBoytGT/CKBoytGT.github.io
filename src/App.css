@@ -89,7 +89,7 @@ p:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
+  gap: 3.2rem;
 }
 
 #about div {
@@ -137,6 +137,12 @@ p:last-child {
   display: flex;
 }
 
+@media screen and (min-width: 1279px) {
+  #about {
+    gap: 6rem;
+  }
+}
+
 @media screen and (min-width: 913px) {
   h2 {
     text-align: left;
@@ -154,17 +160,6 @@ p:last-child {
     margin-bottom: 2rem;
   }
 
-  .tablet-hidden-flex {
-    display: flex;
-  }
-
-  .desktop-hidden-in,
-  .desktop-hidden-flex {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 913px) {
   #about p {
     margin-left: 0;
     margin-right: 0;
@@ -175,6 +170,15 @@ p:last-child {
     gap: 4rem;
     max-width: none;
     margin: 0;
+  }
+
+  .tablet-hidden-flex {
+    display: flex;
+  }
+
+  .desktop-hidden-in,
+  .desktop-hidden-flex {
+    display: none;
   }
 }
 
