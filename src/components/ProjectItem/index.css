@@ -37,6 +37,12 @@
 }
 
 .proj-name a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 44px;
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: 0.25rem;
@@ -45,25 +51,40 @@
 }
 
 .proj-name a svg {
-  display: block;
+  min-height: 32px;
+  min-width: 32px;
 }
 
 .proj-langs {
   font-size: 1.6rem;
 }
 
+@media (pointer: fine) {
+  .proj-name a {
+    min-height: auto;
+    min-width: auto;
+    line-height: normal;
+  }
+
+  .proj-name a svg {
+    min-height: auto;
+    min-width: auto;
+  }
+}
+
 @media (hover: hover) {
   .proj-overlay {
-    opacity : 0;
+    opacity: 0;
     align-items: center;
   }
 
-  .proj-overlay:hover, .proj-overlay:focus-within {
+  .proj-overlay:hover,
+  .proj-overlay:focus-within {
     transition: opacity 0.3s;
     opacity: 1;
   }
 }
 
 .proj-name a:focus-visible {
-  outline-offset: 0 ;
+  outline-offset: 0;
 }

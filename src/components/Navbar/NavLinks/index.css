@@ -24,7 +24,6 @@ nav ul li a:focus-visible {
 }
 
 @media screen and (min-width: 913px) {
-
   nav ul {
     flex-direction: row;
     gap: 4rem;
@@ -40,10 +39,9 @@ nav ul li a:focus-visible {
     border-bottom: 1px solid rgb(var(--accent));
     text-decoration: none;
   }
-
 }
 
-@media (pointer:fine) {
+@media (pointer: fine) {
   nav ul {
     font-size: 1.6rem;
   }
