@@ -124,17 +124,8 @@ p:last-child {
   color: rgb(var(--accent));
 }
 
-.hidden,
-.tablet-hidden-flex {
+.hidden {
   display: none;
-}
-
-.desktop-hidden-in {
-  display: inline;
-}
-
-.desktop-hidden-flex {
-  display: flex;
 }
 
 @media screen and (min-width: 1279px) {
@@ -172,17 +163,9 @@ p:last-child {
     margin: 0;
   }
 
-  .tablet-hidden-flex {
-    display: flex;
-  }
-
-  .desktop-hidden-in,
-  .desktop-hidden-flex {
-    display: none;
-  }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 797px) {
   #proj-grid {
     max-width: none;
   }
