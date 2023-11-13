@@ -69,6 +69,18 @@ form button {
     cursor: pointer;
 }
 
+form button:hover,
+form button:focus-visible {
+    background: rgb(var(--light));
+    color: #fff;
+}
+
+form button:active {
+    background: transparent;
+    outline: 2px rgb(var(--accent)) solid !important;
+    color: #fff;
+}
+
 #send-bar {
     display: flex;
     justify-content: space-between;
@@ -98,12 +110,6 @@ form button {
 
 @-webkit-keyframes ellipsis {
   to { width: 1.2rem; }
-}
-
-form button:hover,
-form button:focus-visible {
-    background: rgb(var(--light));
-    color: #fff;
 }
 
 @media (pointer: fine) {
