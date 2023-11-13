@@ -18,6 +18,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
+nav ul li a:active,
 nav ul li a:focus-visible {
   color: rgb(var(--accent));
   text-decoration: underline;
@@ -35,7 +36,9 @@ nav ul li a:focus-visible {
     border-bottom: 1px solid transparent;
   }
 
-  nav ul li a:hover {
+  nav ul li a:hover,
+  nav ul li a:active,
+  nav ul li a:focus-visible {
     border-bottom: 1px solid rgb(var(--accent));
     text-decoration: none;
   }

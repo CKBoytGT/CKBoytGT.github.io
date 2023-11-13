@@ -47,6 +47,7 @@ nav {
 }
 
 #hamburger:hover,
+#hamburger:active,
 #hamburger:focus-visible {
   color: rgb(var(--accent));
 }

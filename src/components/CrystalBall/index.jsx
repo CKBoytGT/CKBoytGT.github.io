@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // import { useState } from "react";
-import "./index.css"
+import "./index.css";
 
 const CrystalBall = () => {
   // // use this if you want to set up an effect on hover
@@ -17,7 +17,7 @@ const CrystalBall = () => {
   const styles = {
     contentColor: {
       fill: "rgb(var(--dark))",
-    }
+    },
   };
 
   return (
