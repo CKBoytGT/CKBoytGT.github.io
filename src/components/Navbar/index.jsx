@@ -17,7 +17,7 @@ const Navbar = () => {
         <div id="header-container">
           <div id="header-top-row">
             <div id="site-logo">
-              <a href="/" title="homepage of ckboyt.com">
+              <a href="/" aria-label="homepage of ckboyt.com">
                 <img src={logo} alt="C. K. Boyt logo"></img>
               </a>
             </div>
