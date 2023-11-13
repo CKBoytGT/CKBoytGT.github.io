@@ -39,9 +39,7 @@ const Navbar = () => {
           </div>
           {hamburgerOpen && (
             <nav className="desktop-hidden-flex">
-              <NavLinks
-                onPress={toggleHamburger}
-              />
+              <NavLinks onPress={toggleHamburger} />
             </nav>
           )}
         </div>
