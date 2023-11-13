@@ -54,7 +54,9 @@ a {
   color: rgb(var(--accent));
   text-decoration: underline;
 }
-a:hover {
+
+a:hover,
+a:active {
   color: #fff;
   text-decoration: underline;
 }
