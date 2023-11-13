@@ -1,0 +1,16 @@
+#seal-logo {
+    animation: 4s linear infinite sealglow;
+}
+
+@keyframes sealglow {
+    25%, 75% {
+        fill: rgb(var(--accent));
+    }
+
+    50% {
+        fill: white;
+        filter:
+            drop-shadow(0 0 1em rgb(var(--accent)))
+            drop-shadow(0 0 1em rgb(var(--accent)));
+    }
+}

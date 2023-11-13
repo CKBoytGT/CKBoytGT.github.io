@@ -9,12 +9,12 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin: 4rem 2rem;
+  gap: 6rem;
+  margin: 6rem 2rem;
 }
 
 h1 {
-  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
   font-size: 6.4rem;
   line-height: 1.1;
 }
@@ -23,8 +23,8 @@ h2 {
   width: 100%;
   overflow: hidden;
   padding: 0;
-  padding-bottom: 2rem;
-  font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 4rem;
+  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
   text-transform: lowercase;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
@@ -60,6 +60,7 @@ a:hover {
 }
 
 p {
+  max-width: 80rem;
   margin-bottom: 1.5rem;
   text-align: left;
 }
@@ -82,14 +83,22 @@ p:last-child {
 #work,
 #contact {
   scroll-margin-top: 6.8rem;
-  /* padding-top: 2rem; */
 }
 
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3.2rem;
+}
+
+#about div {
+  width: 100%;
+}
+
+#about p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #proj-grid {
@@ -97,23 +106,32 @@ p:last-child {
   flex-direction: column;
   align-items: center;
   grid-gap: 2rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#contact-lockup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .highlight {
   color: rgb(var(--accent));
 }
 
-.hidden,
-.tablet-hidden-flex {
+.hidden {
   display: none;
 }
 
-.desktop-hidden-in {
-  display: inline;
-}
-
-.desktop-hidden-flex {
-  display: flex;
+@media screen and (min-width: 1279px) {
+  #about {
+    gap: 6rem;
+  }
 }
 
 @media screen and (min-width: 913px) {
@@ -129,21 +147,33 @@ p:last-child {
     flex-direction: row;
   }
 
-  .tablet-hidden-flex {
-    display: flex;
+  #about h2 {
+    margin-bottom: 2rem;
   }
 
-  .desktop-hidden-in,
-  .desktop-hidden-flex {
-    display: none;
+  #about p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #contact-lockup {
+    flex-direction: row;
+    gap: 4rem;
+    max-width: none;
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 797px) {
+  #proj-grid {
+    max-width: none;
   }
 }
 
 @media screen and (min-width: 440px) {
-
   #proj-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
 }

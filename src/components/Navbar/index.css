@@ -31,7 +31,7 @@ header {
 
 #site-logo img {
   display: block;
-  max-height: 48px;
+  max-height: 44px;
 }
 
 nav {
@@ -42,19 +42,44 @@ nav {
 }
 
 #hamburger {
-  max-height: 48px;
+  max-height: 44px;
+  cursor: pointer;
+}
+
+#hamburger:hover,
+#hamburger:focus-visible {
+  color: rgb(var(--accent));
 }
 
 .hamburger-icon {
-  min-height: 48px;
-  min-width: 48px;
+  min-height: 44px;
+  min-width: 44px;
 }
 
-@media screen and (min-width: 913px) {
+.tablet-hidden-flex {
+  display: none;
+}
 
+.desktop-hidden-in {
+  display: inline;
+}
+
+.desktop-hidden-flex {
+  display: flex;
+}
+
+@media screen and (min-width: 719px) {
   #header-container {
     flex-direction: row;
     align-items: center;
   }
 
+  .tablet-hidden-flex {
+    display: flex;
+  }
+
+  .desktop-hidden-in,
+  .desktop-hidden-flex {
+    display: none;
+  }
 }

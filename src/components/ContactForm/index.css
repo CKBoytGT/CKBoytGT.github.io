@@ -1,10 +1,12 @@
 #contact-form {
-    margin: 0 auto;
-    max-width: 480px;
+    width: 100%;
+    flex: 1 1 50%;
 }
 
 form {
     width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -55,6 +57,8 @@ textarea {
 
 form button {
     align-self: flex-end;
+    min-height: 44px;
+    min-width: 44px;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     background: linear-gradient(135deg,rgb(var(--light)) 0,rgb(var(--accent)) 100%);
@@ -62,6 +66,7 @@ form button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
+    cursor: pointer;
 }
 
 #send-bar {
@@ -99,4 +104,11 @@ form button:hover,
 form button:focus-visible {
     background: rgb(var(--light));
     color: #fff;
+}
+
+@media (pointer: fine) {
+    form button {
+        min-height: auto;
+        min-width: auto;
+    }
 }

@@ -9,8 +9,8 @@ nav ul {
 nav ul li a {
   display: flex;
   align-items: center;
-  min-height: 48px;
-  min-width: 48px;
+  min-height: 44px;
+  min-width: 44px;
   color: #ffffff;
   line-height: 1;
   letter-spacing: 0.25rem;
@@ -23,12 +23,10 @@ nav ul li a:focus-visible {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 913px) {
-
+@media screen and (min-width: 719px) {
   nav ul {
     flex-direction: row;
     gap: 4rem;
-    font-size: 1.6rem;
   }
 
   nav ul li a {
@@ -41,5 +39,10 @@ nav ul li a:focus-visible {
     border-bottom: 1px solid rgb(var(--accent));
     text-decoration: none;
   }
+}
 
+@media (pointer: fine) {
+  nav ul {
+    font-size: 1.6rem;
+  }
 }

@@ -4,6 +4,7 @@ import CrystalBall from "./components/CrystalBall";
 import projects from "./data/projects.json";
 import ProjectItem from "./components/ProjectItem";
 import ContactForm from "./components/ContactForm";
+import Envelope from "./components/Envelope";
 import Footer from "./components/Footer";
 
 function App() {
@@ -59,7 +60,10 @@ function App() {
         </section>
         <section id="contact">
           <h2>Contact</h2>
-          <ContactForm />
+          <div id="contact-lockup">
+            <ContactForm />
+            <Envelope />
+          </div>
         </section>
       </main>
       <Footer />
