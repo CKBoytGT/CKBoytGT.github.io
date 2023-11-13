@@ -43,6 +43,12 @@ nav {
 
 #hamburger {
   max-height: 44px;
+  cursor: pointer;
+}
+
+#hamburger:hover,
+#hamburger:focus-visible {
+  color: rgb(var(--accent));
 }
 
 .hamburger-icon {
