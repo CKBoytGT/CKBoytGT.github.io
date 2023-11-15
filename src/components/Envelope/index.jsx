@@ -11,7 +11,7 @@ const Envelope = (props) => {
     >
       <defs>
         <linearGradient
-          id="env-left"
+          id="env-right"
           x1={2674.4}
           x2={2279.63}
           y1={177.59}
@@ -56,7 +56,7 @@ const Envelope = (props) => {
           <stop offset={1} stopColor="rgb(var(--light))" />
         </linearGradient>
         <linearGradient
-          id="env-right"
+          id="env-shadow-top-flap-right"
           x1={2705.17}
           x2={2410.9}
           y1={139.53}
@@ -94,7 +94,7 @@ const Envelope = (props) => {
           />
           <stop
             offset={0.67}
-            stopColor="rgb(var(--light))"
+            stopColor="rgb(var(--light)))"
             stopOpacity={0.01}
           />
           <stop offset={1} stopColor="rgb(var(--light))" stopOpacity={0} />
@@ -193,7 +193,7 @@ const Envelope = (props) => {
         <path
           d="M1079.93 24.37c.69 2.65 1.07 5.43 1.07 8.3v574.67c0 2.87-.37 5.65-1.07 8.29L639.73 320l440.2-295.63Z"
           style={{
-            fill: "url(#env-left)",
+            fill: "url(#env-right)",
             strokeWidth: 0,
           }}
         />
@@ -221,7 +221,7 @@ const Envelope = (props) => {
         <path
           d="m637.94 320 442.61-297.24.36 1.36a33.7 33.7 0 0 1 1.1 8.55v574.67c0 2.89-.37 5.76-1.1 8.55l-.36 1.36-442.61-297.24Z"
           style={{
-            fill: "url(#env-right)",
+            fill: "url(#env-shadow-top-flap-right)",
             strokeWidth: 0,
           }}
         />
