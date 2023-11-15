@@ -1,8 +1,15 @@
-#seal-logo {
-  animation: 4s linear infinite sealglow;
+#env-svg {
+  height: 100%;
+  width: auto;
+  max-height: 18rem;
+  flex: 1 1 50%;
 }
 
-@keyframes sealglow {
+#env-seal-logo {
+  animation: 4s linear infinite logocolor;
+}
+
+@keyframes logocolor {
   25%,
   75% {
     fill: rgb(var(--accent));
@@ -10,7 +17,25 @@
 
   50% {
     fill: white;
-    filter: drop-shadow(0 0 1em rgb(var(--accent)))
-      drop-shadow(0 0 1em rgb(var(--accent)));
+  }
+}
+
+#env-glow {
+  animation: 4s linear infinite logoglow;
+}
+
+@keyframes logoglow {
+  50% {
+    opacity: 1;
+  }
+
+  0%, 100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #env-svg {
+  max-height: 28rem;
   }
 }
