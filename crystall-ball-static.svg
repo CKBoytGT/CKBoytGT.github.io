@@ -1,93 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 viewBox="0 0 1240 1240" preserveAspectRatio="xMidYMid meet">
-<style type="text/css">
-	.st0{fill:url(#stand-top_00000055686327953781473870000010883305250272431034_);}
-	.st1{fill:url(#stand-edge_00000169526702080790976160000018282116651632263840_);}
-	.st2{fill:url(#color_00000005260586760315488230000007079342015366036636_);}
-	.st3{fill:url(#shade_00000075145509937654004850000011546035214644081302_);}
-	.st4{fill:#211335;}
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 1080 1080"
+	preserveAspectRatio="xMidYMid meet"
+>
+	<style type="text/css">
+		#cb-glow-med,
+		#cb-glow-light {
+			animation: 4s linear infinite glow;
+			transform-origin: center center;
+		}
 
-	#ball {
-    	animation: 4s linear infinite glow;
-	}
+		@keyframes glow {
+			50% {
+				transform: scale(1);
+			}
 
-	@keyframes glow {
-		50% {
-			filter:
-				drop-shadow(0 0 2.5em rgb(156, 231, 224))
-				drop-shadow(0 0 2.5em rgb(126, 87, 197))
-				drop-shadow(0 0 2.5em rgb(126, 87, 197));
+			0%,
+			100% {
+				transform: scale(0.925);
+			}
 		}
-		0%, 100% {
-			filter:
-				drop-shadow(0 0 2.5em rgba(156, 231, 224), 0.5)
-				drop-shadow(0 0 3em rgba(126, 87, 197), 0.25)
-				drop-shadow(0 0 3em rgba(126, 87, 197), 0.25);
-		}
-	}
 
-	#content {
-    	animation: 2s linear infinite float, 4s linear infinite fade;
-	}
+		#cb-content {
+			animation: 2s linear infinite float, 4s linear infinite fade;
+		}
 
-	@keyframes float {
-		50% {
-			transform: translate(0, 1em);
+		@keyframes float {
+			50% {
+				transform: translate(0, 1em);
+			}
+			0%,
+			100% {
+				transform: translate(0, -1em);
+			}
 		}
-		0%, 100% {
-			transform: translate(0, -1em);
-		}
-	}
 
-	@keyframes fade {
-		50% {
-			opacity: 75%;
+		@keyframes fade {
+			50% {
+				opacity: 75%;
+			}
+			0%,
+			100% {
+				opacity: 50%;
+			}
 		}
-		0%, 100% {
-			opacity: 50%;
-		}
-	}
-</style>
-<g id="stand">
-	<g id="top">
-		
-			<linearGradient id="stand-top_00000182489466517992492720000007794189284561162156_" gradientUnits="userSpaceOnUse" x1="348.73" y1="334.4" x2="891.27" y2="334.4" gradientTransform="matrix(1 0 0 -1 0 1398)">
-			<stop  offset="0" style="stop-color:#9CE7E0"/>
-			<stop  offset="1" style="stop-color:#211335"/>
-		</linearGradient>
-		
-			<ellipse id="stand-top" style="fill:url(#stand-top_00000182489466517992492720000007794189284561162156_);" cx="620" cy="1063.6" rx="271.3" ry="62.5"/>
-	</g>
-	<g id="edge">
-		
-			<linearGradient id="stand-edge_00000104689417857438419550000014869483876826429095_" gradientUnits="userSpaceOnUse" x1="310.6" y1="247.72" x2="929.4" y2="247.72" gradientTransform="matrix(1 0 0 -1 0 1398)">
-			<stop  offset="0" style="stop-color:#9CE7E0"/>
-			<stop  offset="1" style="stop-color:#211335"/>
-		</linearGradient>
-		<path id="stand-edge" style="fill:url(#stand-edge_00000104689417857438419550000014869483876826429095_);" d="M891.3,1060.6
-			c0,34.5-121.5,64-271.3,64s-271.3-29.4-271.3-64l-38.1,108.1c0,39.4,138.5,71.3,309.4,71.3s309.4-31.9,309.4-71.3L891.3,1060.6z"
+
+	</style>
+	<title>
+		Glowing green and purple crystal ball with a floating code symbol
+		inside.
+	</title>
+	<defs>
+		<radialGradient
+			id="grad-glow-med"
+			cx="540"
+			cy="540"
+			r="540"
+			fx="540"
+			fy="540"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0" stop-color="rgb(126, 87, 197)" stop-opacity="1" />
+			<stop offset="0.7" stop-color="rgb(126, 87, 197)" stop-opacity="0.8" />
+			<stop offset="1" stop-color="rgb(126, 87, 197)" stop-opacity="0" />
+		</radialGradient>
+		<radialGradient
+			id="grad-glow-light"
+			cx="540"
+			cy="540"
+			r="540"
+			fx="540"
+			fy="540"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0.64" stop-color="rgb(156, 231, 224)" stop-opacity="1" />
+			<stop
+				offset="0.88"
+				stop-color="rgb(156, 231, 224)"
+				stop-opacity="0.1"
 			/>
+			<stop
+				offset="0.92"
+				stop-color="rgb(156, 231, 224)"
+				stop-opacity="0.02"
+			/>
+			<stop offset="0.96" stop-color="rgb(156, 231, 224)" stop-opacity="0" />
+		</radialGradient>
+		<radialGradient
+			id="grad-ball-shade"
+			cx="540"
+			cy="539.93"
+			r="418.73"
+			fx="423.55"
+			fy="338.57"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0.76" stop-color="rgb(126, 87, 197)" stop-opacity="0" />
+			<stop offset="1" stop-color="rgb(126, 87, 197)" />
+		</radialGradient>
+		<linearGradient
+			id="grad-stand-top"
+			x1="299.17"
+			x2="780.83"
+			y1="923.4"
+			y2="923.4"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0" stop-color="rgb(156, 231, 224)" />
+			<stop offset="1" stop-color="rgb(33, 19, 53)" />
+		</linearGradient>
+		<linearGradient
+			id="grad-stand-edge"
+			x1="265.32"
+			x2="814.68"
+			y1="1000.35"
+			y2="1000.35"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0" stop-color="rgb(156, 231, 224)" />
+			<stop offset="1" stop-color="rgb(33, 19, 53)" />
+		</linearGradient>
+		<linearGradient
+			id="grad-ball-color"
+			x1="540"
+			x2="540"
+			y1="958.07"
+			y2="121.79"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop offset="0" stop-color="rgb(126, 87, 197)" />
+			<stop offset="1" stop-color="rgb(156, 231, 224)" />
+		</linearGradient>
+	</defs>
+	<ellipse
+		cx="540"
+		cy="923.4"
+		rx="240.83"
+		ry="55.5"
+		style="fill: url(#grad-stand-top); strokeWidth: 0;"
+	/>
+	<path
+		d="M780.83 920.69c0 30.65-107.82 56.78-240.83 56.78s-240.83-26.13-240.83-56.78l-33.85 96c0 34.96 122.98 63.3 274.68 63.3s274.68-28.34 274.68-63.3l-33.85-96Z"
+		style="fill: url(#grad-stand-edge); strokeWidth: 0;"
+	/>
+	<g id="cb-glow">
+		<circle
+			id="cb-glow-med"
+			cx="540"
+			cy="540"
+			r="540"
+			style="fill: url(#grad-glow-med); strokeWidth: 0;"
+		/>
+		<circle
+			id="cb-glow-light"
+			cx="540"
+			cy="540"
+			r="540"
+			style="fill: url(#grad-glow-light); strokeWidth: 0;"
+		/>
 	</g>
-</g>
-<g id="ball">
-	
-	<linearGradient id="color_00000036935489068308917570000014001646261693772682_" gradientUnits="userSpaceOnUse" x1="620" y1="294.68" x2="620" y2="1238" gradientTransform="matrix(1 0 0 -1 0 1398)">
-		<stop  offset="0" style="stop-color:#7E57C5"/>
-		<stop  offset="1" style="stop-color:#9CE7E0"/>
-	</linearGradient>
-	<circle id="color" style="fill:url(#color_00000036935489068308917570000014001646261693772682_);" cx="620" cy="631.7" r="470"/>
-	
-	<radialGradient id="shade_00000133509109914943273820000018238021431908968339_" cx="600" cy="802.34" r="471.66" fx="600" fy="797.5" gradientTransform="matrix(1 0 0 -1 0 1398)" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.7796" style="stop-color:#7E57C5;stop-opacity:0"/>
-		<stop  offset="0.9265" style="stop-color:#7E57C5"/>
-	</radialGradient>
-	
-		<circle id="shade" style="fill:url(#shade_00000133509109914943273820000018238021431908968339_);" cx="620" cy="631.7" r="471.7"/>
-	<g id="content">
-		<path class="st4" d="M472.1,747.6l-183.2-95.2l-1.4-32.1l184.1-104.4l21.5,40.3l-136.5,76.5l0.5,2.7l136.9,70.1L472.1,747.6z"/>
-		<path class="st4" d="M577.4,826.5l-48.1-19.7l141-370l47.2,20.6L577.4,826.5z"/>
-		<path class="st4" d="M767.9,747.6l-22.4-42.1l137.4-70.1l0.5-2.7l-136.5-76.5l21.5-40.3l184.1,104.4l-1.8,32.1L767.9,747.6z"/>
+	<g id="cb-ball">
+		<circle
+			cx="540"
+			cy="539.93"
+			r="418.14"
+			style="fill: url(#grad-ball-color); strokeWidth: 0;"
+		/>
+		<circle
+			cx="540"
+			cy="539.93"
+			r="418.73"
+			style="fill: url(#grad-ball-shade); strokeWidth: 0;"
+		/>
+		<path
+			id="cb-content"
+			d="m408.69 642.83-162.61-84.56-1.22-28.46 163.43-92.69 19.11 35.77-121.15 67.89.41 2.44 121.55 62.2-19.51 37.4ZM502.19 712.91l-42.69-17.48 125.21-328.48 41.87 18.29-124.4 327.67ZM671.31 642.83l-19.92-37.4 121.96-62.2.41-2.44-121.15-67.89 19.11-35.77 163.43 92.69-1.63 28.46-162.21 84.56Z"
+			style="fill: rgb(33, 19, 53); strokeWidth: 0;"
+		/>
 	</g>
-</g>
 </svg>
