@@ -22,6 +22,10 @@ const CrystalBall = (props) => {
       preserveAspectRatio="xMidYMid meet"
       {...props}
     >
+      <title>
+        Glowing green and purple crystal ball with a floating code symbol
+        inside.
+      </title>
       <defs>
         <radialGradient
           id="grad-glow-med"

@@ -9,6 +9,10 @@ const Envelope = (props) => {
       preserveAspectRatio="xMidYMid meet"
       {...props}
     >
+      <title>
+        Green and purple envelope with a purple wax seal bearing the C. K. Boyt
+        logo.
+      </title>
       <defs>
         <linearGradient
           id="env-right"
