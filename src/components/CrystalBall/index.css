@@ -1,22 +1,28 @@
-#ball {
+#cb-svg {
+  flex: 0 1 48rem;
+  height: 100%;
+  width: auto;
+  max-height: 24rem;
+}
+
+#cb-glow-med,
+#cb-glow-light {
   animation: 4s linear infinite glow;
+  transform-origin: center center;
 }
 
 @keyframes glow {
   50% {
-    filter: drop-shadow(0 0 2.5em rgb(var(--accent)))
-      drop-shadow(0 0 3em rgb(var(--light)))
-      drop-shadow(0 0 3em rgb(var(--light)));
+    transform: scale(1);
   }
+
   0%,
   100% {
-    filter: drop-shadow(0 0 2.5em rgba(var(--accent), 0.5))
-      drop-shadow(0 0 3em rgba(var(--light), 0.25))
-      drop-shadow(0 0 3em rgba(var(--light), 0.25));
+    transform: scale(0.925);
   }
 }
 
-#content {
+#cb-content {
   animation:
     2s linear infinite float,
     4s linear infinite fade;
@@ -39,5 +45,12 @@
   0%,
   100% {
     opacity: 50%;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  #cb-svg {
+    max-height: 48rem;
   }
 }

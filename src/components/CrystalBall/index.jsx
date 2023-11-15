@@ -2,7 +2,7 @@
 // import { useState } from "react";
 import "./index.css";
 
-const CrystalBall = () => {
+const CrystalBall = (props) => {
   // // use this if you want to set up an effect on hover
   // const [isHover, setIsHover] = useState(false);
 
@@ -14,123 +14,162 @@ const CrystalBall = () => {
   //   setIsHover(false);
   // };
 
-  const styles = {
-    contentColor: {
-      fill: "rgb(var(--dark))",
-    },
-  };
-
   return (
     <svg
-      viewBox="0 0 943.32 1080"
+      id="cb-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1080 1080"
       preserveAspectRatio="xMidYMid meet"
-      role="img"
-      style={{
-        height: "32rem",
-        width: "auto",
-        overflow: "visible",
-        padding: "2.5rem 5rem 0 5rem",
-      }}
-      // onMouseEnter={handleMouseEnter}
-      // onMouseLeave={handleMouseLeave}
+      {...props}
     >
-      <title>
-        Glowing green and purple crystal ball with a floating code symbol
-        inside.
-      </title>
       <defs>
-        <linearGradient
-          id="stand-edge-grad"
-          x1="162.26"
-          y1="991.8"
-          x2="781.06"
-          y2="991.8"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stopColor="rgb(var(--accent))" />
-          <stop offset="1" stopColor="rgb(var(--dark))" />
-        </linearGradient>
-        <linearGradient
-          id="stand-top-grad"
-          x1="200.39"
-          y1="903.6"
-          x2="742.93"
-          y2="903.6"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stopColor="rgb(var(--accent))" />
-          <stop offset="1" stopColor="rgb(var(--dark))" />
-        </linearGradient>
         <radialGradient
-          id="shade-grad"
-          cx="471.66"
-          cy="471.66"
-          fx="340.49"
-          fy="244.85"
-          r="471.66"
+          id="grad-glow-med"
+          cx={540}
+          cy={540}
+          r={540}
+          fx={540}
+          fy={540}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".76" stopColor="rgb(var(--light))" stopOpacity="0" />
-          <stop offset="1" stopColor="rgb(var(--light))" />
+          <stop offset={0} stopColor="rgb(var(--light))" stopOpacity={1} />
+          <stop offset={0.7} stopColor="rgb(var(--light))" stopOpacity={0.8} />
+          <stop offset={1} stopColor="rgb(var(--light))" stopOpacity={0} />
+        </radialGradient>
+        <radialGradient
+          id="grad-glow-light"
+          cx={540}
+          cy={540}
+          r={540}
+          fx={540}
+          fy={540}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.64} stopColor="rgb(var(--accent))" stopOpacity={1} />
+          <stop
+            offset={0.88}
+            stopColor="rgb(var(--accent))"
+            stopOpacity={0.1}
+          />
+          <stop
+            offset={0.92}
+            stopColor="rgb(var(--accent))"
+            stopOpacity={0.02}
+          />
+          <stop offset={0.96} stopColor="rgb(var(--accent))" stopOpacity={0} />
+        </radialGradient>
+        <radialGradient
+          id="grad-ball-shade"
+          cx={540}
+          cy={539.93}
+          r={418.73}
+          fx={423.55}
+          fy={338.57}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.76} stopColor="rgb(var(--light))" stopOpacity={0} />
+          <stop offset={1} stopColor="rgb(var(--light))" />
         </radialGradient>
         <linearGradient
-          id="color-grad"
-          x1="471.66"
-          y1="943.32"
-          x2="471.66"
-          y2="0"
+          id="grad-stand-top"
+          x1={299.17}
+          x2={780.83}
+          y1={923.4}
+          y2={923.4}
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stopColor="rgb(var(--light))" />
-          <stop offset="1" stopColor="rgb(var(--accent))" />
+          <stop offset={0} stopColor="rgb(var(--accent))" />
+          <stop offset={1} stopColor="rgb(var(--dark))" />
+        </linearGradient>
+        <linearGradient
+          id="grad-stand-edge"
+          x1={265.32}
+          x2={814.68}
+          y1={1000.35}
+          y2={1000.35}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0} stopColor="rgb(var(--accent))" />
+          <stop offset={1} stopColor="rgb(var(--dark))" />
+        </linearGradient>
+        <linearGradient
+          id="grad-ball-color"
+          x1={540}
+          x2={540}
+          y1={958.07}
+          y2={121.79}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0} stopColor="rgb(var(--light))" />
+          <stop offset={1} stopColor="rgb(var(--accent))" />
         </linearGradient>
       </defs>
-      <g id="stand">
-        <g id="top">
-          <ellipse
-            style={{ fill: "url(#stand-top-grad)" }}
-            cx="471.66"
-            cy="903.6"
-            rx="271.27"
-            ry="62.52"
-          />
-        </g>
-        <g id="edge">
-          <path
-            style={{ fill: "url(#stand-edge-grad)" }}
-            d="m742.93,900.56c0,34.53-121.45,63.96-271.27,63.96s-271.27-29.43-271.27-63.96l-38.13,108.14c0,39.38,138.52,71.3,309.4,71.3s309.4-31.92,309.4-71.3l-38.13-108.14Z"
-          />
-        </g>
+      <ellipse
+        cx={540}
+        cy={923.4}
+        rx={240.83}
+        ry={55.5}
+        style={{
+          fill: "url(#grad-stand-top)",
+          strokeWidth: 0,
+        }}
+      />
+      <path
+        d="M780.83 920.69c0 30.65-107.82 56.78-240.83 56.78s-240.83-26.13-240.83-56.78l-33.85 96c0 34.96 122.98 63.3 274.68 63.3s274.68-28.34 274.68-63.3l-33.85-96Z"
+        style={{
+          fill: "url(#grad-stand-edge)",
+          strokeWidth: 0,
+        }}
+      />
+      <g id="cb-glow">
+        <circle
+          id="cb-glow-med"
+          cx={540}
+          cy={540}
+          r={540}
+          style={{
+            fill: "url(#grad-glow-med)",
+            strokeWidth: 0,
+          }}
+        />
+        <circle
+          id="cb-glow-light"
+          cx={540}
+          cy={540}
+          r={540}
+          style={{
+            fill: "url(#grad-glow-light)",
+            strokeWidth: 0,
+          }}
+        />
       </g>
-      <g id="ball">
+      <g id="cb-ball">
         <circle
-          id="color"
-          style={{ fill: "url(#color-grad)" }}
-          cx="471.66"
-          cy="471.66"
-          r="470"
+          cx={540}
+          cy={539.93}
+          r={418.14}
+          style={{
+            fill: "url(#grad-ball-color)",
+            strokeWidth: 0,
+          }}
         />
         <circle
-          id="shade"
-          style={{ fill: "url(#shade-grad)" }}
-          cx="471.66"
-          cy="471.66"
-          r="471.66"
+          cx={540}
+          cy={539.93}
+          r={418.73}
+          style={{
+            fill: "url(#grad-ball-shade)",
+            strokeWidth: 0,
+          }}
         />
-        <g id="content">
-          <path
-            style={styles.contentColor}
-            d="M324.1,587.6l-183.2-95.2l-1.4-32.1l184.1-104.4l21.5,40.3l-136.5,76.5l0.5,2.7l136.9,70.1L324.1,587.6z"
-          />
-          <path
-            style={styles.contentColor}
-            d="M429.4,666.5l-48.1-19.7l141-370l47.2,20.6L429.4,666.5z"
-          />
-          <path
-            style={styles.contentColor}
-            d="M619.9,587.6l-22.4-42.1l137.4-70.1l0.5-2.7l-136.5-76.5l21.5-40.3l184.1,104.4l-1.8,32.1L619.9,587.6z"
-          />
-        </g>
+        <path
+          id="cb-content"
+          d="m408.69 642.83-162.61-84.56-1.22-28.46 163.43-92.69 19.11 35.77-121.15 67.89.41 2.44 121.55 62.2-19.51 37.4ZM502.19 712.91l-42.69-17.48 125.21-328.48 41.87 18.29-124.4 327.67ZM671.31 642.83l-19.92-37.4 121.96-62.2.41-2.44-121.15-67.89 19.11-35.77 163.43 92.69-1.63 28.46-162.21 84.56Z"
+          style={{
+            fill: "rgb(var(--dark))",
+            strokeWidth: 0,
+          }}
+        />
       </g>
     </svg>
   );
