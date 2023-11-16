@@ -13,34 +13,38 @@ function App() {
       <Navbar />
       <main>
         <section id="about">
-          <CrystalBall />
-          <div>
-            <h2>About</h2>
-            <p>
-              I&apos;m <span className="highlight">Christina K. Boyt</span>, a
-              front-end web developer with extensive graphic design and digital
-              media experience. In addition to my BFA in Graphic Design, I have
-              received a certificate in Full Stack Web Development from Georgia
-              Tech. My combination of formal education and self-teaching has
-              given me the ability to both design and code websites and apps
-              completely from scratch. In particular, I am very comfortable
-              creating custom CSS, though I am also experienced with using
-              frameworks, especially Tailwind, on collaborative projects.
-            </p>
-            <p>
-              If you&apos;d like to add my unique designer-developer skillset to
-              your team, please reach out to{" "}
-              <a href="mailto:me@ckboyt.com">me@ckboyt.com</a> or via{" "}
-              <a
-                href="https://www.linkedin.com/in/ckboyt/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
-              ! I am open to both volunteer work for open source projects as
-              well as paid opportunities.
-            </p>
+          <div className="flex-row">
+            <div className="flex-1-3rd">
+              <CrystalBall />
+            </div>
+            <div className="flex-2-3rds">
+              <h2>About</h2>
+              <p>
+                I&apos;m <span className="highlight">Christina K. Boyt</span>, a
+                front-end web developer with extensive graphic design and digital
+                media experience. In addition to my BFA in Graphic Design, I have
+                received a certificate in Full Stack Web Development from Georgia
+                Tech. My combination of formal education and self-teaching has
+                given me the ability to both design and code websites and apps
+                completely from scratch. In particular, I am very comfortable
+                creating custom CSS, though I am also experienced with using
+                frameworks, especially Tailwind, on collaborative projects.
+              </p>
+              <p>
+                If you&apos;d like to add my unique designer-developer skillset to
+                your team, please reach out to{" "}
+                <a href="mailto:me@ckboyt.com">me@ckboyt.com</a> or via{" "}
+                <a
+                  href="https://www.linkedin.com/in/ckboyt/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+                ! I am open to both volunteer work for open source projects as
+                well as paid opportunities.
+              </p>
+            </div>
           </div>
         </section>
         <section id="work">
@@ -60,9 +64,13 @@ function App() {
         </section>
         <section id="contact">
           <h2>Contact</h2>
-          <div id="contact-lockup">
-            <ContactForm />
-            <Envelope />
+          <div className="flex-row">
+            <div className="flex-half">
+              <ContactForm />
+            </div>
+            <div className="flex-half">
+              <Envelope />
+            </div>
           </div>
         </section>
       </main>

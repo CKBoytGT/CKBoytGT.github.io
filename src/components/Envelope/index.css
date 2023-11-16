@@ -1,8 +1,5 @@
 #env-svg {
-  flex: 0 1 50%;
-  height: 100%;
-  width: auto;
-  max-height: 18rem;
+  max-height: 20rem;
 }
 
 #env-seal-logo {
@@ -36,6 +33,6 @@
 
 @media screen and (min-width: 769px) {
   #env-svg {
-  max-height: 28rem;
+    max-height: 28rem;
   }
 }
