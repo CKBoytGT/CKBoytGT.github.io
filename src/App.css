@@ -271,20 +271,20 @@ main {
   }
 }
 
-/* BREAKPOINT - remove size limit from grid */
-
-@media screen and (min-width: 797px) {
-  #proj-grid {
-    max-width: none;
-  }
-}
-
 /* BREAKPOINT - column to grid */
 
 @media screen and (min-width: 440px) {
   #proj-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+
+/* BREAKPOINT - remove size limit from grid */
+
+@media screen and (min-width: 797px) {
+  #proj-grid {
+    max-width: none;
   }
 }
 
