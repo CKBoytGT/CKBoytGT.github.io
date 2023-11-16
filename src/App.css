@@ -2,16 +2,10 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 0 1rem; */
   text-align: center;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin: 4rem 2rem;
-}
+/* TYPOGRAPHY */
 
 h1 {
   font-family: Eczar, Georgia, "Times New Roman", Times, serif;
@@ -71,6 +65,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
+/* FOCUS */
+
 :focus:not(:focus-visible) {
   outline: none;
 }
@@ -81,27 +77,145 @@ p:last-child {
   border-radius: 0.25rem;
 }
 
-#about,
-#work,
-#contact {
-  scroll-margin-top: 6.8rem;
+/* UTILITY */
+
+.highlight {
+  color: rgb(var(--accent));
 }
 
-#about {
+.hidden {
+  display: none;
+}
+
+.flex-row {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3.2rem;
 }
 
+.flex-1-3rd {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 33.33%;
+}
+
+.flex-half {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 50%;
+}
+
+.flex-2-3rds {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 66.66%;
+}
+
+/* FORMS */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+label {
+  width: 100%;
+  display: flex;
+}
+
+input,
+textarea {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(var(--light));
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+input:focus-visible,
+input:active,
+textarea:focus-visible,
+textarea:active {
+  outline: 2px rgb(var(--accent)) solid;
+}
+
+input {
+  display: inline;
+  margin-left: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+textarea {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+form button {
+  align-self: flex-end;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgb(var(--light)) 0,
+    rgb(var(--accent)) 100%
+  );
+  color: rgb(var(--dark));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus-visible {
+  background: rgb(var(--light));
+  color: #fff;
+}
+
+form button:active {
+  background: transparent;
+  outline: 2px rgb(var(--accent)) solid !important;
+  color: #fff;
+}
+
+.form-row {
+  align-items: center;
+}
+
+.form-textarea {
+  flex-direction: column;
+}
+
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 4rem 2rem;
+}
+
+#about,
+#work,
+#contact {
+  scroll-margin-top: 6.8rem;
+}
+
+/* ABOUT */
+
 #about div {
   width: 100%;
 }
 
-#about p {
-  margin-left: auto;
-  margin-right: auto;
-}
+/* WORK */
 
 #proj-grid {
   display: flex;
@@ -111,6 +225,8 @@ p:last-child {
   max-width: 480px;
   margin: 0 auto;
 }
+
+/* CONTACT */
 
 #contact-lockup {
   display: flex;
@@ -122,13 +238,7 @@ p:last-child {
   margin: 0 auto;
 }
 
-.highlight {
-  color: rgb(var(--accent));
-}
-
-.hidden {
-  display: none;
-}
+/* BREAKPOINT - desktop */
 
 @media screen and (min-width: 769px) {
   h2 {
@@ -145,17 +255,12 @@ p:last-child {
     margin: 6rem 2rem;
   }
 
-  #about {
+  .flex-row {
     flex-direction: row;
   }
 
   #about h2 {
     margin-bottom: 2rem;
-  }
-
-  #about p {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   #contact-lockup {
@@ -166,15 +271,28 @@ p:last-child {
   }
 }
 
+/* BREAKPOINT - remove size limit from grid */
+
 @media screen and (min-width: 797px) {
   #proj-grid {
     max-width: none;
   }
 }
 
+/* BREAKPOINT - column to grid */
+
 @media screen and (min-width: 440px) {
   #proj-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+
+/* POINTER - non-touchscreen */
+
+@media (pointer: fine) {
+  form button {
+    min-height: auto;
+    min-width: auto;
   }
 }

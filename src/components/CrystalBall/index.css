@@ -1,8 +1,6 @@
 #cb-svg {
-  flex: 0 1 48rem;
-  height: 100%;
-  width: auto;
   max-height: 24rem;
+  flex-grow: 1;
 }
 
 #cb-glow-med,
@@ -51,6 +49,6 @@
 
 @media screen and (min-width: 769px) {
   #cb-svg {
-    max-height: 48rem;
+    max-height: none;
   }
 }
