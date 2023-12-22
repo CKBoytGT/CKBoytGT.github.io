@@ -56,6 +56,7 @@ function App() {
                 img={project.img}
                 live={project.live}
                 gitHub={project.github}
+                caseStudy={project.casestudy}
                 name={project.name}
                 langs={project.langs}
               />

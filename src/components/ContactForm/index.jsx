@@ -1,48 +1,51 @@
 import "./index.css";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import validateEmail from "../../utils/helpers.js";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
-  const [sendStatus, setSendStatus] = useState("");
-  const [sendError, setSendError] = useState("false");
+  const [data, setData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+  const [sendStatus, setSendStatus] = useState({
+    error_color: false,
+    message: "",
+  });
 
   const form = useRef();
 
-  const validateEmail = (email) => {
-    const regex =
-      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    return regex.test(String(email).toLowerCase());
-  };
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
 
-  const handleInputChange = (e) => {
-    const { target } = e;
-    const inputName = target.name;
-    const inputValue = target.value;
-
-    if (inputName === "user_name") {
-      setName(inputValue);
-    } else if (inputName === "user_email") {
-      setEmail(inputValue);
-    } else {
-      setMsg(inputValue);
-    }
+    setData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !msg) {
-      setSendError(true);
-      setSendStatus("All fields are required.");
-    } else if (!validateEmail(email)) {
-      setSendError(true);
-      setSendStatus("Please enter a valid email address.");
+    const formFilled = [...Object.values(data)].every(Boolean);
+
+    if (!formFilled) {
+      setSendStatus({
+        error_color: true,
+        message: "All fields are required.",
+      });
+    } else if (!validateEmail(data.user_email)) {
+      setSendStatus({
+        error_color: true,
+        message: "Please enter a valid email address.",
+      });
     } else {
-      setSendError(false);
-      setSendStatus("Sending");
+      setSendStatus({
+        error_color: false,
+        message: "Sending",
+      });
 
       emailjs
         .sendForm(
@@ -54,12 +57,17 @@ const ContactForm = () => {
         .then(
           (result) => {
             console.log(result.text);
-            setSendStatus("Message sent!");
+            setSendStatus({
+              error_color: false,
+              message: "Message sent!",
+            });
           },
           (error) => {
             console.log(error.text);
-            setSendError(true);
-            setSendStatus("Server error: Please email me@ckboyt.com directly.");
+            setSendStatus({
+              error_color: true,
+              message: "Server error: Please email me@ckboyt.com directly.",
+            });
           }
         );
     }
@@ -71,34 +79,38 @@ const ContactForm = () => {
         <label className="form-row">
           Name:
           <input
-            value={name}
+            value={data.user_name}
             type="text"
             name="user_name"
-            onChange={handleInputChange}
+            onChange={handleChange}
           ></input>
         </label>
         <label className="form-row">
           Email:
           <input
-            value={email}
+            value={data.user_email}
             type="text"
             name="user_email"
-            onChange={handleInputChange}
+            onChange={handleChange}
           ></input>
         </label>
         <label className="form-textarea">
           Message:
           <textarea
-            value={msg}
+            value={data.message}
             name="message"
             rows="8"
-            onChange={handleInputChange}
+            onChange={handleChange}
           ></textarea>
         </label>
         <div id="send-bar">
-          <p style={sendError ? { color: "#ffc0eb" } : {}}>
-            {sendStatus}
-            {sendStatus === "Sending" ? <span id="dots">&#x2026;</span> : ""}
+          <p style={sendStatus.error_color ? { color: "#ffc0eb" } : {}}>
+            {sendStatus.message}
+            {sendStatus.message === "Sending" ? (
+              <span id="dots">&#x2026;</span>
+            ) : (
+              ""
+            )}
           </p>
           <button type="submit">Send</button>
         </div>

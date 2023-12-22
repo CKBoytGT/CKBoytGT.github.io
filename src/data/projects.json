@@ -38,15 +38,15 @@
     "name": "WRAS.org",
     "img": "./images/thumbnail-project-5.jpg",
     "live": "https://wras.org/",
-    "github": "none",
+    "casestudy": "https://gist.github.com/CKBoytGT/421da7e57d3f148505f483a2dbb50a0c",
     "langs": ["WordPress", "CSS", "Adobe Suite"]
   },
   {
     "id": 6,
-    "name": "CompassNIL Landing",
+    "name": "CompassNIL",
     "img": "./images/thumbnail-project-6.jpg",
     "live": "https://compassnil.com/",
-    "github": "none",
+    "casestudy": "https://gist.github.com/CKBoytGT/7f0a65af271c94e054d8955fbcf3b7d2",
     "langs": ["Adobe Illustrator", "Adobe Photoshop"]
   }
 ]
