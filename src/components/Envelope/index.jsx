@@ -7,12 +7,10 @@ const Envelope = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1082 641"
       preserveAspectRatio="xMidYMid meet"
+      role="img"
+      aria-hidden="true"
       {...props}
     >
-      <title>
-        Green and purple envelope with a purple wax seal bearing the C. K. Boyt
-        logo.
-      </title>
       <defs>
         <linearGradient
           id="env-right"
