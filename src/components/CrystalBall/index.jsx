@@ -20,12 +20,10 @@ const CrystalBall = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1080 1080"
       preserveAspectRatio="xMidYMid meet"
+      role="img"
+      aria-hidden="true"
       {...props}
     >
-      <title>
-        Glowing green and purple crystal ball with a floating code symbol
-        inside.
-      </title>
       <defs>
         <radialGradient
           id="grad-glow-med"

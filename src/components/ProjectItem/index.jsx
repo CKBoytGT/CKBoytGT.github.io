@@ -6,7 +6,7 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 const ProjectItem = ({ img, live, gitHub, caseStudy, name, langs }) => {
   return (
     <div className="proj">
-      <img src={img} alt={name} />
+      <img src={img} alt="" />
       <div className="proj-overlay">
         <div className="proj-info">
           <div className="proj-name">

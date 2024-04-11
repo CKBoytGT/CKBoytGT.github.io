@@ -21,18 +21,20 @@ function App() {
               <h2>About</h2>
               <p>
                 I&apos;m <span className="highlight">Christina K. Boyt</span>, a
-                front-end web developer with extensive graphic design and digital
-                media experience. In addition to my BFA in Graphic Design, I have
-                received a certificate in Full Stack Web Development from Georgia
-                Tech. My combination of formal education and self-teaching has
-                given me the ability to both design and code websites and apps
-                completely from scratch. In particular, I am very comfortable
-                creating custom CSS, though I am also experienced with using
-                frameworks, especially Tailwind, on collaborative projects.
+                hybrid developer-designer and CSS enthusiast.
               </p>
               <p>
-                If you&apos;d like to add my unique designer-developer skillset to
-                your team, please reach out to{" "}
+                In addition to my degree in graphic design and a full stack
+                certificate from Georgia Tech, I&apos;ve trained my skills as a
+                hobbyist web designer from a young age—back when &quot;UI/UX
+                designer &quot; and &quot;full stack developer&quot; were two
+                halves of the same role—and have sought out and taken
+                responsibility for coding opportunities in every graphic design
+                position I&apos;ve held.
+              </p>
+              <p>
+                If you&apos;d like to add my unique skillset and professional
+                experience to your team, please reach out to{" "}
                 <a href="mailto:me@ckboyt.com">me@ckboyt.com</a> or via{" "}
                 <a
                   href="https://www.linkedin.com/in/ckboyt/"

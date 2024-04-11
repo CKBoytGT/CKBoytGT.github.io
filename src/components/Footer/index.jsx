@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright &#169; 2023 Christina K. Boyt. All rights reserved.</p>
+      <p>Copyright &#169; 2023-2024 Christina K. Boyt. All rights reserved.</p>
       <ul>
         <li>
           <a

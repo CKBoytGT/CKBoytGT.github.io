@@ -2,9 +2,9 @@
   max-height: 16rem;
 }
 
-#env-seal-logo {
+/* #env-seal-logo {
   animation: 4s linear infinite logocolor;
-}
+} */
 
 @keyframes logocolor {
   25%,
@@ -17,9 +17,9 @@
   }
 }
 
-#env-glow {
+/* #env-glow {
   animation: 4s linear infinite logoglow;
-}
+} */
 
 @keyframes logoglow {
   50% {
