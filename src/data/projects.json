@@ -3,7 +3,7 @@
     "id": 1,
     "name": "projeCritter",
     "img": "./images/thumbnail-project-1.jpg",
-    "live": "https://projecritter.herokuapp.com/",
+    "live": "https://projecritter.onrender.com/",
     "github": "https://github.com/CKBoytGT/projeCritter",
     "langs": ["React", "GraphQL", "CSS Animation"]
   },
