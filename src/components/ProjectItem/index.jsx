@@ -12,7 +12,8 @@ const ProjectItem = ({ img, live, gitHub, caseStudy, name, langs }) => {
           <div className="proj-name">
             <a href={live} target="_blank" rel="noreferrer">
               {name}
-            </a>
+            </a>{" "}
+            <span style={{color: "rgb(var(--accent))"}}>|</span>
             {gitHub && (
               <a
                 href={gitHub}
