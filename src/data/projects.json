@@ -11,8 +11,7 @@
     "id": 2,
     "name": "waterUdoin",
     "img": "./images/thumbnail-project-2.jpg",
-    "live": "https://github.com/CKBoytGT/waterUdoin",
-    "_comment": "!!!swap above URL once deployed!!!",
+    "live": "https://waterudoin.ckboyt.com/",
     "github": "https://github.com/CKBoytGT/waterUdoin",
     "langs": ["MySQL", "RESTful API", "Tailwind CSS"]
   },
