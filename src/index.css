@@ -45,6 +45,7 @@
 }
 
 :root {
+  /* Google color picker: https://www.google.com/search?q=color+picker */
   --dark: 24, 14, 37; /* #180e25 */
   --light: 141, 107, 204; /* #8d6bcc */
   --accent: 175, 243, 236; /* #aff3ec */
