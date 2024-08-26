@@ -87,6 +87,10 @@ p:last-child {
   display: none;
 }
 
+.tablet-hidden {
+  display: none;
+}
+
 .flex-row {
   display: flex;
   flex-direction: column;
@@ -268,6 +272,10 @@ main {
     gap: 4rem;
     max-width: none;
     margin: 0;
+  }
+
+  .tablet-hidden {
+    display: block;
   }
 }
 
