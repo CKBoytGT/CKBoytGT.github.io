@@ -3,7 +3,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgb(var(--accent));
+  border-top: 1px solid rgb(var(--light));
   margin: 0 2rem;
   padding: 2.4rem 0;
   font-size: 1.6rem;
