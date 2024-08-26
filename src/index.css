@@ -45,9 +45,9 @@
 }
 
 :root {
-  --dark: 24, 14, 37;
-  --light: 141, 107, 204;
-  --accent: 175, 243, 236;
+  --dark: 24, 14, 37; /* #180e25 */
+  --light: 141, 107, 204; /* #8d6bcc */
+  --accent: 175, 243, 236; /* #aff3ec */
   font-size: 62.5%;
 
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
