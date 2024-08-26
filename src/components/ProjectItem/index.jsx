@@ -13,7 +13,7 @@ const ProjectItem = ({ img, live, gitHub, caseStudy, name, langs }) => {
             <a href={live} target="_blank" rel="noreferrer">
               {name}
             </a>{" "}
-            <span style={{color: "rgb(var(--accent))"}}>|</span>
+            <span style={{ color: "rgb(var(--accent))" }}>|</span>
             {gitHub && (
               <a
                 href={gitHub}

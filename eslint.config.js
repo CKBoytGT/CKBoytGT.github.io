@@ -1,5 +1,6 @@
 import globals from "globals";
 import pluginReact from "eslint-plugin-react";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
   { files: ["**/*.{js,mjs,cjs,jsx}"] },
@@ -7,5 +8,6 @@ export default [
   { settings: { react: { version: "detect" } } },
   { languageOptions: { globals: globals.browser } },
   pluginReact.configs.flat.recommended,
+  eslintConfigPrettier,
   { rules: { "react/react-in-jsx-scope": "off" } },
 ];
