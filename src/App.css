@@ -52,6 +52,7 @@ a {
 a:hover,
 a:active {
   color: #fff;
+  transition: color 0.3s;
   text-decoration: underline;
 }
 
@@ -172,18 +173,20 @@ form button {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 form button:hover,
-form button:focus-visible {
-  background: rgb(var(--light));
-  color: #fff;
+form button:active {
+  background: #81d4cc;
 }
 
-form button:active {
-  background: transparent;
-  outline: 2px rgb(var(--accent)) solid !important;
-  color: #fff;
+form button:focus,
+form button:focus-visible {
+  outline: 2px rgb(var(--light)) solid !important;
+  outline-offset: 0.25rem !important;
 }
 
 .form-row {
