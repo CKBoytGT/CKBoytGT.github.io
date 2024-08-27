@@ -240,7 +240,7 @@ main {
 
 /* BREAKPOINT - desktop */
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 821px) {
   h2 {
     margin-bottom: 2rem;
     text-align: left;
