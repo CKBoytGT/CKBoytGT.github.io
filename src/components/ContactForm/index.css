@@ -1,8 +1,8 @@
 #contact-form {
-  width: 100%;
-  max-width: 480px;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  max-width: 480px;
 }
 
 #send-bar {
@@ -14,18 +14,18 @@
 
 #send-bar p {
   margin: 0;
-  font-size: 1.6rem;
-  font-style: italic;
   color: rgb(var(--accent));
+  font-style: italic;
+  font-size: 1.6rem;
 }
 
 #dots {
-  overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
   -webkit-animation: ellipsis steps(4, end) 900ms infinite;
   animation: ellipsis steps(4, end) 900ms infinite;
   width: 0rem;
+  overflow: hidden;
 }
 
 @keyframes ellipsis {

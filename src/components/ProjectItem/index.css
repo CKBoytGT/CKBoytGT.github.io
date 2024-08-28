@@ -1,9 +1,9 @@
 .proj {
-  border-radius: 0.5em;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
   position: relative;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .proj img {
@@ -11,22 +11,22 @@
 }
 
 .proj-overlay {
-  height: 100%;
-  width: 100%;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
   opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .proj-info {
   background: rgb(var(--light));
+  padding: 0.5rem 0;
   width: 100%;
   line-height: 1.25;
-  padding: 0.5rem 0;
 }
 
 .proj-name {
@@ -38,13 +38,13 @@
 
 .proj-name a {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2.4rem;
+  align-items: center;
   font-weight: 600;
+  font-size: 2.4rem;
   letter-spacing: 0.25rem;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .proj-langs {

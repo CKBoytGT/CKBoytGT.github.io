@@ -1,9 +1,9 @@
 header {
-  width: 100%;
   position: sticky;
   z-index: 1;
-  background-color: rgb(var(--dark));
   border-spacing: 5px;
+  background-color: rgb(var(--dark));
+  width: 100%;
 }
 
 .sticky {
@@ -13,14 +13,14 @@ header {
 
 #header-border {
   margin: 0 1.5rem;
-  padding: 1.2rem 0 1.2rem 0;
   border-bottom: 1px solid rgb(var(--light));
+  padding: 1.2rem 0 1.2rem 0;
 }
 
 #header-container {
   display: flex;
-  flex-direction: row;
   flex-grow: 1;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -42,8 +42,8 @@ nav {
 }
 
 #hamburger svg {
-  height: 44px;
   width: 44px;
+  height: 44px;
 }
 
 .mobile-hidden-flex {
@@ -78,8 +78,8 @@ nav {
 @media screen and (min-width: 821px) {
   #header-border {
     margin: 0 1.9rem;
-    padding: 1.2rem 0 1.2rem 0;
     border-bottom: 1px solid rgb(var(--light));
+    padding: 1.2rem 0 1.2rem 0;
   }
 
   #header-container {

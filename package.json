@@ -23,7 +23,9 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
+    "postcss": "^8.4.41",
     "prettier": "3.3.3",
+    "prettier-plugin-css-order": "^2.1.2",
     "vite": "^4.3.9"
   }
 }
