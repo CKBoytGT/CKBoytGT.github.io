@@ -2,39 +2,10 @@
   max-height: 16rem;
 }
 
-/* #env-seal-logo {
-  animation: 4s linear infinite logocolor;
-} */
-
-@keyframes logocolor {
-  25%,
-  75% {
-    fill: rgb(var(--accent));
-  }
-
-  50% {
-    fill: white;
-  }
-}
-
-/* #env-glow {
-  animation: 4s linear infinite logoglow;
-} */
-
-@keyframes logoglow {
-  50% {
-    opacity: 1;
-  }
-
-  0%, 100% {
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 821px) {
   #env-svg {
-    max-height: none;
     padding: 0 4rem;
+    max-height: none;
   }
 }
 

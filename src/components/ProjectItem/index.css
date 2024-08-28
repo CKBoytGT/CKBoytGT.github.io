@@ -1,32 +1,34 @@
 .proj {
-  border-radius: 0.5em;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
   position: relative;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .proj img {
   display: block;
+  z-index: auto;
 }
 
 .proj-overlay {
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   opacity: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .proj-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background: rgb(var(--light));
+  padding: 0.5rem 0;
   width: 100%;
   line-height: 1.25;
-  padding: 0.5rem 0;
 }
 
 .proj-name {
@@ -38,13 +40,13 @@
 
 .proj-name a {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2.4rem;
+  align-items: center;
   font-weight: 600;
+  font-size: 2.4rem;
   letter-spacing: 0.25rem;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .proj-langs {
@@ -52,14 +54,27 @@
 }
 
 @media (hover: hover) {
-  .proj-overlay {
+  .proj-overlay .proj-info {
+    transform: translate(0, 100%);
     opacity: 0;
-    align-items: center;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
   }
 
-  .proj-overlay:hover,
-  .proj-overlay:focus-within {
-    transition: opacity 0.3s;
+  .proj-overlay:hover .proj-info {
+    transform: none;
     opacity: 1;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .proj-overlay .proj-info:focus-within {
+    transform: none;
+    opacity: 1;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
   }
 }

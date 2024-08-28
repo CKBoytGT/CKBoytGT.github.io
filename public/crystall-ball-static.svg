@@ -62,9 +62,9 @@
 			fy="540"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0" stop-color="rgb(126, 87, 197)" stop-opacity="1" />
-			<stop offset="0.7" stop-color="rgb(126, 87, 197)" stop-opacity="0.8" />
-			<stop offset="1" stop-color="rgb(126, 87, 197)" stop-opacity="0" />
+			<stop offset="0" stop-color="#8d6bcc" stop-opacity="1" />
+			<stop offset="0.7" stop-color="#8d6bcc" stop-opacity="0.8" />
+			<stop offset="1" stop-color="#8d6bcc" stop-opacity="0" />
 		</radialGradient>
 		<radialGradient
 			id="grad-glow-light"
@@ -75,18 +75,18 @@
 			fy="540"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0.64" stop-color="rgb(156, 231, 224)" stop-opacity="1" />
+			<stop offset="0.64" stop-color="#aff3ec" stop-opacity="1" />
 			<stop
 				offset="0.88"
-				stop-color="rgb(156, 231, 224)"
+				stop-color="#aff3ec"
 				stop-opacity="0.1"
 			/>
 			<stop
 				offset="0.92"
-				stop-color="rgb(156, 231, 224)"
+				stop-color="#aff3ec"
 				stop-opacity="0.02"
 			/>
-			<stop offset="0.96" stop-color="rgb(156, 231, 224)" stop-opacity="0" />
+			<stop offset="0.96" stop-color="#aff3ec" stop-opacity="0" />
 		</radialGradient>
 		<radialGradient
 			id="grad-ball-shade"
@@ -97,8 +97,8 @@
 			fy="338.57"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0.76" stop-color="rgb(126, 87, 197)" stop-opacity="0" />
-			<stop offset="1" stop-color="rgb(126, 87, 197)" />
+			<stop offset="0.76" stop-color="#8d6bcc" stop-opacity="0" />
+			<stop offset="1" stop-color="#8d6bcc" />
 		</radialGradient>
 		<linearGradient
 			id="grad-stand-top"
@@ -108,8 +108,8 @@
 			y2="923.4"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0" stop-color="rgb(156, 231, 224)" />
-			<stop offset="1" stop-color="rgb(33, 19, 53)" />
+			<stop offset="0" stop-color="#aff3ec" />
+			<stop offset="1" stop-color="#180e25" />
 		</linearGradient>
 		<linearGradient
 			id="grad-stand-edge"
@@ -119,8 +119,8 @@
 			y2="1000.35"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0" stop-color="rgb(156, 231, 224)" />
-			<stop offset="1" stop-color="rgb(33, 19, 53)" />
+			<stop offset="0" stop-color="#aff3ec" />
+			<stop offset="1" stop-color="#180e25" />
 		</linearGradient>
 		<linearGradient
 			id="grad-ball-color"
@@ -130,8 +130,8 @@
 			y2="121.79"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0" stop-color="rgb(126, 87, 197)" />
-			<stop offset="1" stop-color="rgb(156, 231, 224)" />
+			<stop offset="0" stop-color="#8d6bcc" />
+			<stop offset="1" stop-color="#aff3ec" />
 		</linearGradient>
 	</defs>
 	<ellipse
@@ -177,7 +177,7 @@
 		<path
 			id="cb-content"
 			d="m408.69 642.83-162.61-84.56-1.22-28.46 163.43-92.69 19.11 35.77-121.15 67.89.41 2.44 121.55 62.2-19.51 37.4ZM502.19 712.91l-42.69-17.48 125.21-328.48 41.87 18.29-124.4 327.67ZM671.31 642.83l-19.92-37.4 121.96-62.2.41-2.44-121.15-67.89 19.11-35.77 163.43 92.69-1.63 28.46-162.21 84.56Z"
-			style="fill: rgb(33, 19, 53); strokeWidth: 0;"
+			style="fill: #180e25; strokeWidth: 0;"
 		/>
 	</g>
 </svg>

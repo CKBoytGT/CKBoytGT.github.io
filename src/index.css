@@ -1,54 +1,63 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./assets/fonts/montserrat-v26-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("./assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("./assets/fonts/montserrat-v26-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  font-family: "Montserrat";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }
 /* montserrat-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
-  src: url('./assets/fonts/montserrat-v26-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./assets/fonts/montserrat-v26-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("./assets/fonts/montserrat-v26-latin-italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("./assets/fonts/montserrat-v26-latin-italic.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  font-family: "Montserrat";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }
 /* montserrat-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/montserrat-v26-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./assets/fonts/montserrat-v26-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("./assets/fonts/montserrat-v26-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("./assets/fonts/montserrat-v26-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  font-family: "Montserrat";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }
 
 /* eczar-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Eczar';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/eczar-v22-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./assets/fonts/eczar-v22-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("./assets/fonts/eczar-v22-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("./assets/fonts/eczar-v22-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  font-family: "Eczar";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }
 
 :root {
-  --dark: 33, 19, 53;
-  --light: 126, 87, 197;
-  --accent: 156, 231, 224;
-  font-size: 62.5%;
-
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Google color picker: https://www.google.com/search?q=color+picker */
+  --dark: 24, 14, 37; /* #180e25 */
+  --light: 141, 107, 204; /* #8d6bcc */
+  --accent: 175, 243, 236; /* #aff3ec */
+  background-color: rgb(var(--dark));
+  color: #ffffff;
 
   color-scheme: light dark;
-  color: #ffffff;
-  background-color: rgb(var(--dark));
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.5;
+
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,19 +67,19 @@
 }
 
 button {
-  font-size: 100%;
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   height: 100dvh;
 }
 
 body {
-
   font-size: 1.8rem;
 }

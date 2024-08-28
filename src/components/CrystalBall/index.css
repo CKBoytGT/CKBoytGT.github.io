@@ -1,12 +1,12 @@
 #cb-svg {
-  max-height: 24rem;
   flex-grow: 1;
+  max-height: 24rem;
 }
 
 #cb-glow-med,
 #cb-glow-light {
-  animation: 4s linear infinite glow;
   transform-origin: center center;
+  animation: 4s linear infinite glow;
 }
 
 @keyframes glow {
@@ -46,8 +46,7 @@
   }
 }
 
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 821px) {
   #cb-svg {
     max-height: none;
   }

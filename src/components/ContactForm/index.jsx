@@ -52,7 +52,7 @@ const ContactForm = () => {
           "service_gbhel8j",
           "template_6h0cmsc",
           form.current,
-          "boMIdbpmZB6qujKMl"
+          "boMIdbpmZB6qujKMl",
         )
         .then(
           (result) => {
@@ -68,7 +68,7 @@ const ContactForm = () => {
               error_color: true,
               message: "Server error: Please email me@ckboyt.com directly.",
             });
-          }
+          },
         );
     }
   };

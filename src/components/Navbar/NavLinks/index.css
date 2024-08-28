@@ -7,21 +7,44 @@ nav ul {
 }
 
 nav ul li a {
-  display: flex;
-  align-items: center;
-  min-height: 44px;
+  display: block;
+  position: relative;
+  transition: color 0.3s;
   min-width: 44px;
+  min-height: 44px;
   color: #ffffff;
   line-height: 1;
   letter-spacing: 0.25rem;
   text-decoration: none;
 }
 
+nav ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition:
+    opacity 300ms,
+    transform 300ms;
+  background-color: rgb(var(--accent));
+  width: 100%;
+  height: 0.05em;
+  content: "";
+}
+
 nav ul li a:hover,
 nav ul li a:active,
 nav ul li a:focus-visible {
+  transition: color 0.3s;
   color: rgb(var(--accent));
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+nav ul li a:hover::after,
+nav ul li a:active::after,
+nav ul li a:focus-visible::after {
+  transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
 }
 
 @media screen and (min-width: 441px) {
@@ -31,17 +54,17 @@ nav ul li a:focus-visible {
   }
 
   nav ul li a {
-    min-height: auto;
     min-width: auto;
-    border-bottom: 1px solid transparent;
+    min-height: auto;
+    /* border-bottom: 1px solid transparent; */
   }
 
-  nav ul li a:hover,
+  /* nav ul li a:hover,
   nav ul li a:active,
   nav ul li a:focus-visible {
     border-bottom: 1px solid rgb(var(--accent));
     text-decoration: none;
-  }
+  } */
 }
 
 @media (pointer: fine) {

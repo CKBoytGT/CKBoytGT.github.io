@@ -71,7 +71,7 @@ function App() {
             <div className="flex-half">
               <ContactForm />
             </div>
-            <div className="flex-half">
+            <div className="flex-half tablet-hidden">
               <Envelope />
             </div>
           </div>

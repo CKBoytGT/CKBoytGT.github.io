@@ -1,47 +1,47 @@
 #root {
+  margin: 0 auto;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
   text-align: center;
 }
 
 /* TYPOGRAPHY */
 
 h1 {
-  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
   font-size: 6.4rem;
   line-height: 1.1;
+  font-family: Eczar, Georgia, "Times New Roman", Times, serif;
 }
 
 h2 {
+  margin-bottom: 2rem;
+  padding: 0;
   width: 100%;
   overflow: hidden;
-  padding: 0;
-  margin-bottom: 2rem;
+  color: rgb(var(--light));
+  font-size: 3.6rem;
   font-family: Eczar, Georgia, "Times New Roman", Times, serif;
-  text-transform: lowercase;
-  font-size: 3.2rem;
   letter-spacing: 0.1rem;
+  text-transform: lowercase;
 }
 
 h2::before,
 h2::after {
-  border-top: 1px solid #9ce7e0;
-  border-top: 1px solid rgb(var(--accent));
-  content: "";
   display: inline-block;
   vertical-align: middle;
+  border-top: 1px solid rgb(var(--light));
   width: 100%;
+  content: "";
 }
 
 h2::before {
-  margin-left: -100%;
   margin-right: 1rem;
+  margin-left: -100%;
 }
 
 h2::after {
-  margin-left: 1rem;
   margin-right: -100%;
+  margin-left: 1rem;
 }
 
 a {
@@ -51,13 +51,14 @@ a {
 
 a:hover,
 a:active {
+  transition: color 0.3s;
   color: #fff;
   text-decoration: underline;
 }
 
 p {
+  margin-bottom: 1.6rem;
   max-width: 80rem;
-  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -87,6 +88,10 @@ p:last-child {
   display: none;
 }
 
+.tablet-hidden {
+  display: none;
+}
+
 .flex-row {
   display: flex;
   flex-direction: column;
@@ -95,21 +100,21 @@ p:last-child {
 }
 
 .flex-1-3rd {
-  height: 100%;
-  width: 100%;
   flex: 1 1 33.33%;
+  width: 100%;
+  height: 100%;
 }
 
 .flex-half {
-  height: 100%;
-  width: 100%;
   flex: 1 1 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .flex-2-3rds {
-  height: 100%;
-  width: 100%;
   flex: 1 1 66.66%;
+  width: 100%;
+  height: 100%;
 }
 
 /* FORMS */
@@ -118,22 +123,22 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left;
   gap: 1rem;
+  text-align: left;
 }
 
 label {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 input,
 textarea {
-  border-radius: 0.5rem;
   border: 1px solid rgb(var(--light));
+  border-radius: 0.5rem;
   background: transparent;
-  color: #fff;
   padding: 0.5rem 1rem;
+  color: #fff;
 }
 
 input:focus-visible,
@@ -145,9 +150,9 @@ textarea:active {
 
 input {
   display: inline;
-  margin-left: 1rem;
   flex-grow: 1;
   flex-shrink: 1;
+  margin-left: 1rem;
   min-width: 0;
 }
 
@@ -158,32 +163,30 @@ textarea {
 
 form button {
   align-self: flex-end;
-  min-height: 44px;
-  min-width: 44px;
-  padding: 0.5rem 2rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  cursor: pointer;
   border-radius: 0.5rem;
-  background: linear-gradient(
-    135deg,
-    rgb(var(--light)) 0,
-    rgb(var(--accent)) 100%
-  );
+  background: rgb(var(--accent));
+  padding: 0.5rem 2rem;
+  min-width: 44px;
+  min-height: 44px;
   color: rgb(var(--dark));
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.25rem;
-  cursor: pointer;
+  text-transform: uppercase;
 }
 
 form button:hover,
-form button:focus-visible {
-  background: rgb(var(--light));
-  color: #fff;
+form button:active {
+  background: #81d4cc;
 }
 
-form button:active {
-  background: transparent;
-  outline: 2px rgb(var(--accent)) solid !important;
-  color: #fff;
+form button:focus,
+form button:focus-visible {
+  outline: 2px rgb(var(--light)) solid !important;
+  outline-offset: 0.25rem !important;
 }
 
 .form-row {
@@ -200,7 +203,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 4rem 2rem;
+  margin: 4rem 1.6rem;
 }
 
 #about,
@@ -222,8 +225,8 @@ main {
   flex-direction: column;
   align-items: center;
   grid-gap: 2rem;
-  max-width: 480px;
   margin: 0 auto;
+  max-width: 480px;
 }
 
 /* CONTACT */
@@ -234,15 +237,15 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  max-width: 480px;
   margin: 0 auto;
+  max-width: 480px;
 }
 
 /* BREAKPOINT - desktop */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 821px) {
   h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: left;
   }
 
@@ -266,8 +269,12 @@ main {
   #contact-lockup {
     flex-direction: row;
     gap: 4rem;
-    max-width: none;
     margin: 0;
+    max-width: none;
+  }
+
+  .tablet-hidden {
+    display: block;
   }
 }
 
@@ -292,7 +299,7 @@ main {
 
 @media (pointer: fine) {
   form button {
-    min-height: auto;
     min-width: auto;
+    min-height: auto;
   }
 }
