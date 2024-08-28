@@ -9,6 +9,7 @@ const ProjectItem = ({ img, live, gitHub, caseStudy, name, langs }) => {
       <img src={img} alt="" />
       <div className="proj-overlay">
         <div className="proj-info">
+          {/* <a href="#">test</a> */}
           <div className="proj-name">
             <a href={live} target="_blank" rel="noreferrer">
               {name}
