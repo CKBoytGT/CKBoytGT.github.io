@@ -52,13 +52,20 @@
 }
 
 @media (hover: hover) {
-  .proj-overlay {
+  .proj-info {
+    transform: translate(0, 100%);
     opacity: 0;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
   }
 
-  .proj-overlay:hover,
-  .proj-overlay:focus-within {
-    transition: opacity 0.3s;
+  .proj-overlay:hover .proj-info,
+  .proj-info:focus-within {
+    transform: none;
     opacity: 1;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
   }
 }
