@@ -2,15 +2,17 @@ import "./index.css";
 import {
   FaGithub,
   FaLinkedinIn,
-  FaXTwitter,
-  FaMastodon,
+  FaBluesky,
+  FaCodepen,
   FaDribbble,
 } from "react-icons/fa6";
+
+const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright &#169; 2023-2024 Christina K. Boyt. All rights reserved.</p>
+      <p>Copyright &#169; 2023-{year} Christina K. Boyt. All rights reserved.</p>
       <ul>
         <li>
           <a
@@ -34,22 +36,22 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://twitter.com/CKBoyt"
-            aria-label="X"
+            href="https://bsky.app/profile/ckboyt.com"
+            aria-label="Bluesky"
             target="_blank"
             rel="noreferrer"
           >
-            <FaXTwitter />
+            <FaBluesky />
           </a>
         </li>
         <li>
           <a
-            href="https://mastodon.social/@ckboyt"
-            aria-label="Mastodon"
+            href="https://codepen.io/CKBoyt"
+            aria-label="CodePen"
             target="_blank"
             rel="noreferrer"
           >
-            <FaMastodon />
+            <FaCodepen />
           </a>
         </li>
         <li>
