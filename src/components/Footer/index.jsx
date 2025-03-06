@@ -7,10 +7,12 @@ import {
   FaDribbble,
 } from "react-icons/fa6";
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright &#169; 2023-2024 Christina K. Boyt. All rights reserved.</p>
+      <p>Copyright &#169; 2023-{year} Christina K. Boyt. All rights reserved.</p>
       <ul>
         <li>
           <a
