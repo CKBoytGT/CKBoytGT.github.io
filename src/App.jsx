@@ -24,7 +24,7 @@ function App() {
                 hybrid developer-designer and CSS enthusiast.
               </p>
               <p>
-                In addition to my degree in graphic design and a full stack
+                In addition to my degree in graphic design from Georgia State and a full stack
                 certificate from Georgia Tech, I&apos;ve trained my skills as a
                 hobbyist web designer from a young age—back when &quot;UI/UX
                 designer &quot; and &quot;full stack developer&quot; were two
